@@ -11,7 +11,8 @@ Pod::Spec.new do |spec|
   spec.requires_arc          = true
   spec.swift_version         = '5.0'
 
-  spec.dependency 'SudoUser', '~> 7.8'
-  spec.dependency 'SudoConfigManager', '~> 1.2'
+  spec.dependency 'SudoLogging', '~> 0.3'
+  spec.dependency 'SudoUser', '~> 7.14'
+  spec.dependency 'SudoConfigManager', '~> 1.3'
   spec.dependency 'AWSAppSync', '~> 3.0'
 end
