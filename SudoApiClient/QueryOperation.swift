@@ -68,7 +68,7 @@ class QueryOperation<Query: GraphQLQuery>: ApiOperation {
                         }
                     }
                 } else {
-                    self.resultHandler?(nil, ApiOperationError.fatalError(description: "Query completed successfully but result is missing."))
+                    self.resultHandler?(nil, nil)
                     self.done()
                 }
             }

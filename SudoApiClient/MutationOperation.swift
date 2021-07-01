@@ -68,7 +68,7 @@ class MutationOperation<Mutation: GraphQLMutation>: ApiOperation {
                         self.resultHandler?(result, nil)
                     }
                 } else {
-                    self.resultHandler?(nil, ApiOperationError.fatalError(description: "Mutation completed successfully but result is missing."))
+                    self.resultHandler?(nil, nil)
                 }
             }
         })
