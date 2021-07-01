@@ -20,11 +20,16 @@
 		D9971C6722FD299A0077076C /* SudoApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9971C6622FD299A0077076C /* SudoApiClientTests.swift */; };
 		D9971C6922FD299A0077076C /* SudoApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D9971C5B22FD299A0077076C /* SudoApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9971C7E22FD46650077076C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9971C7D22FD46650077076C /* Logger.swift */; };
+		D999CBA8268987DB00E1C24D /* NSLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999CBA7268987DB00E1C24D /* NSLock.swift */; };
+		D9E3AFC926897EF300F4DE05 /* SudoApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3AFC826897EF300F4DE05 /* SudoApiClient.swift */; };
+		D9E3AFCD2689867F00F4DE05 /* ApiOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3AFCB2689867F00F4DE05 /* ApiOperation.swift */; };
+		D9E3AFCE2689867F00F4DE05 /* ApiOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3AFCC2689867F00F4DE05 /* ApiOperationQueue.swift */; };
+		D9E841B8268AA8F900B17EA0 /* QueryOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E841B7268AA8F900B17EA0 /* QueryOperation.swift */; };
+		D9E841BA268AA90A00B17EA0 /* MutationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E841B9268AA90A00B17EA0 /* MutationOperation.swift */; };
 		D9F16E6E22FD498E0055513F /* SudoApiClientIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F16E6D22FD498E0055513F /* SudoApiClientIntegrationTests.swift */; };
 		D9F16E7022FD498E0055513F /* SudoApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9971C5822FD299A0077076C /* SudoApiClient.framework */; };
-		D9FD3DBE23D69FAF00781D80 /* sudoplatformconfig.json in Resources */ = {isa = PBXBuildFile; fileRef = D9FD3DBD23D69FAF00781D80 /* sudoplatformconfig.json */; };
 		D9FD3DC323D6A2BC00781D80 /* sudoplatformconfig.json in Resources */ = {isa = PBXBuildFile; fileRef = D9FD3DC223D6A2BC00781D80 /* sudoplatformconfig.json */; };
-		D9FD3DC723D6A3E800781D80 /* ApiClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD3DC623D6A3E800781D80 /* ApiClientManager.swift */; };
+		D9FD3DC723D6A3E800781D80 /* SudoApiClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD3DC623D6A3E800781D80 /* SudoApiClientManager.swift */; };
 		D9FD3DC923D6A4E400781D80 /* SudoApiClientConfigProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD3DC823D6A4E400781D80 /* SudoApiClientConfigProvider.swift */; };
 		D9FD3DCB23D6A56200781D80 /* AWSEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD3DCA23D6A56200781D80 /* AWSEndpoint.swift */; };
 /* End PBXBuildFile section */
@@ -77,7 +82,6 @@
 		D931C7C22342D22800932612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D931C7C42342D22800932612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D931C7CA2342D3D000932612 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		D9616183235ED6B5000CCD4B /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		D9971C5822FD299A0077076C /* SudoApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SudoApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9971C5B22FD299A0077076C /* SudoApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SudoApiClient.h; sourceTree = "<group>"; };
 		D9971C5C22FD299A0077076C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,12 +91,17 @@
 		D9971C7222FD2A510077076C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D9971C7322FD2A5B0077076C /* SudoApiClient.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SudoApiClient.podspec; sourceTree = "<group>"; };
 		D9971C7D22FD46650077076C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		D999CBA7268987DB00E1C24D /* NSLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLock.swift; sourceTree = "<group>"; };
+		D9E3AFC826897EF300F4DE05 /* SudoApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClient.swift; sourceTree = "<group>"; };
+		D9E3AFCB2689867F00F4DE05 /* ApiOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiOperation.swift; sourceTree = "<group>"; };
+		D9E3AFCC2689867F00F4DE05 /* ApiOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiOperationQueue.swift; sourceTree = "<group>"; };
+		D9E841B7268AA8F900B17EA0 /* QueryOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryOperation.swift; sourceTree = "<group>"; };
+		D9E841B9268AA90A00B17EA0 /* MutationOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutationOperation.swift; sourceTree = "<group>"; };
 		D9F16E6B22FD498E0055513F /* SudoApiClientIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudoApiClientIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F16E6D22FD498E0055513F /* SudoApiClientIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClientIntegrationTests.swift; sourceTree = "<group>"; };
 		D9F16E6F22FD498E0055513F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9FD3DBD23D69FAF00781D80 /* sudoplatformconfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sudoplatformconfig.json; path = SudoApiClientTests/resources/sudoplatformconfig.json; sourceTree = SOURCE_ROOT; };
 		D9FD3DC223D6A2BC00781D80 /* sudoplatformconfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sudoplatformconfig.json; sourceTree = "<group>"; };
-		D9FD3DC623D6A3E800781D80 /* ApiClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientManager.swift; sourceTree = "<group>"; };
+		D9FD3DC623D6A3E800781D80 /* SudoApiClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClientManager.swift; sourceTree = "<group>"; };
 		D9FD3DC823D6A4E400781D80 /* SudoApiClientConfigProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClientConfigProvider.swift; sourceTree = "<group>"; };
 		D9FD3DCA23D6A56200781D80 /* AWSEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSEndpoint.swift; sourceTree = "<group>"; };
 		FF1DF2AE6B7C76BBCF86D187 /* Pods-SudoApiClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient.release.xcconfig"; path = "Target Support Files/Pods-SudoApiClient/Pods-SudoApiClient.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,21 +190,11 @@
 			path = TestApp;
 			sourceTree = "<group>";
 		};
-		D931C7CE2342D71700932612 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D9FD3DBD23D69FAF00781D80 /* sudoplatformconfig.json */,
-			);
-			name = "Supporting Files";
-			path = resources;
-			sourceTree = "<group>";
-		};
 		D9971C4E22FD299A0077076C = {
 			isa = PBXGroup;
 			children = (
 				D9971C7222FD2A510077076C /* Podfile */,
 				D9971C7322FD2A5B0077076C /* SudoApiClient.podspec */,
-				D9616183235ED6B5000CCD4B /* CHANGELOG.md */,
 				D9971C5A22FD299A0077076C /* SudoApiClient */,
 				D9971C6522FD299A0077076C /* SudoApiClientTests */,
 				D9F16E6C22FD498E0055513F /* SudoApiClientIntegrationTests */,
@@ -220,12 +219,14 @@
 		D9971C5A22FD299A0077076C /* SudoApiClient */ = {
 			isa = PBXGroup;
 			children = (
+				D9E3AFCA2689863A00F4DE05 /* Operation */,
 				D9971C7A22FD41090077076C /* Extension */,
 				D9971C5B22FD299A0077076C /* SudoApiClient.h */,
 				D9971C5C22FD299A0077076C /* Info.plist */,
-				D9FD3DC623D6A3E800781D80 /* ApiClientManager.swift */,
+				D9FD3DC623D6A3E800781D80 /* SudoApiClientManager.swift */,
 				D9971C7D22FD46650077076C /* Logger.swift */,
 				D9FD3DC823D6A4E400781D80 /* SudoApiClientConfigProvider.swift */,
+				D9E3AFC826897EF300F4DE05 /* SudoApiClient.swift */,
 			);
 			path = SudoApiClient;
 			sourceTree = "<group>";
@@ -234,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				84CD312B24077E7F007FEC0B /* Tests */,
-				D9FD3DBC23D69F5400781D80 /* Supporting Files */,
 				D9971C6822FD299A0077076C /* Info.plist */,
 			);
 			path = SudoApiClientTests;
@@ -245,26 +245,29 @@
 			children = (
 				D931C7CA2342D3D000932612 /* Data.swift */,
 				D9FD3DCA23D6A56200781D80 /* AWSEndpoint.swift */,
+				D999CBA7268987DB00E1C24D /* NSLock.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		D9E3AFCA2689863A00F4DE05 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				D9E3AFCB2689867F00F4DE05 /* ApiOperation.swift */,
+				D9E3AFCC2689867F00F4DE05 /* ApiOperationQueue.swift */,
+				D9E841B7268AA8F900B17EA0 /* QueryOperation.swift */,
+				D9E841B9268AA90A00B17EA0 /* MutationOperation.swift */,
+			);
+			name = Operation;
 			sourceTree = "<group>";
 		};
 		D9F16E6C22FD498E0055513F /* SudoApiClientIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				D931C7CE2342D71700932612 /* Supporting Files */,
 				D9F16E6D22FD498E0055513F /* SudoApiClientIntegrationTests.swift */,
 				D9F16E6F22FD498E0055513F /* Info.plist */,
 			);
 			path = SudoApiClientIntegrationTests;
-			sourceTree = "<group>";
-		};
-		D9FD3DBC23D69F5400781D80 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
-			path = resources;
 			sourceTree = "<group>";
 		};
 		D9FD3DC123D6A27C00781D80 /* Supporting Files */ = {
@@ -295,6 +298,7 @@
 				D931C7B22342D22700932612 /* Sources */,
 				D931C7B32342D22700932612 /* Frameworks */,
 				D931C7B42342D22700932612 /* Resources */,
+				D942ADD1268C15F7001CD1B6 /* Copy Config */,
 			);
 			buildRules = (
 			);
@@ -314,6 +318,7 @@
 				D9971C5422FD299A0077076C /* Sources */,
 				D9971C5522FD299A0077076C /* Frameworks */,
 				D9971C5622FD299A0077076C /* Resources */,
+				D942ADD2268C5B15001CD1B6 /* Lint */,
 			);
 			buildRules = (
 			);
@@ -444,7 +449,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9FD3DBE23D69FAF00781D80 /* sudoplatformconfig.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +549,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\necho \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\ncp -f identity-system-test-config/anonyome_ssm_parameter_register_key.json \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\ncp -f identity-system-test-config/config.json \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\n";
+			shellScript = "cp -f config/register_key.id \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || true\ncp -f config/register_key.private \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || true\ncp -f config/sudoplatformconfig.json \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || true\n\n";
+		};
+		D942ADD1268C15F7001CD1B6 /* Copy Config */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Config";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Type a script or drag a script file from your workspace to insert its path.\ncp -f config/sudoplatformconfig.json \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || true\n";
+		};
+		D942ADD2268C5B15001CD1B6 /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n    /usr/local/bin/swiftlint --path ${PROJECT_DIR}\nelse\n    echo \"Warning: SwiftLint not installed, run 'brew install swiftlint'\"\nfi\n";
 		};
 		EA70016F6FA267B92DD6EEA9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -585,11 +625,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E3AFC926897EF300F4DE05 /* SudoApiClient.swift in Sources */,
 				D931C7CB2342D3D000932612 /* Data.swift in Sources */,
+				D9E841B8268AA8F900B17EA0 /* QueryOperation.swift in Sources */,
+				D9E3AFCE2689867F00F4DE05 /* ApiOperationQueue.swift in Sources */,
+				D9E3AFCD2689867F00F4DE05 /* ApiOperation.swift in Sources */,
+				D9E841BA268AA90A00B17EA0 /* MutationOperation.swift in Sources */,
 				D9971C7E22FD46650077076C /* Logger.swift in Sources */,
 				D9FD3DCB23D6A56200781D80 /* AWSEndpoint.swift in Sources */,
 				D9FD3DC923D6A4E400781D80 /* SudoApiClientConfigProvider.swift in Sources */,
-				D9FD3DC723D6A3E800781D80 /* ApiClientManager.swift in Sources */,
+				D9FD3DC723D6A3E800781D80 /* SudoApiClientManager.swift in Sources */,
+				D999CBA8268987DB00E1C24D /* NSLock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
