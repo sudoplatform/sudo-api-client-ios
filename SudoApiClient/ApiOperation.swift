@@ -22,7 +22,7 @@ public enum ApiOperationError: Error {
 
     /// Operation failed due to the backend entitlements error. This maybe due to the user not having
     /// sufficient entitlements or exceeding some other service limit.
-    case insufficientEntitlementsError
+    case insufficientEntitlements
 
     /// Operation failed because the user account is locked.
     case accountLocked
@@ -64,7 +64,7 @@ public enum ApiOperationError: Error {
 
         switch errorType {
         case ApiOperation.SudoPlatformServiceError.insufficientEntitlementsError:
-            return .insufficientEntitlementsError
+            return .insufficientEntitlements
         case ApiOperation.SudoPlatformServiceError.conditionalCheckFailedException:
             return .versionMismatch
         case ApiOperation.SudoPlatformServiceError.accountLockedError:
