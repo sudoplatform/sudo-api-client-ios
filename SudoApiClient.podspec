@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name                  = 'SudoApiClient'
-  spec.version               = '5.0.4'
+  spec.version               = '5.0.5'
   spec.author                = { 'Sudo Platform Engineering' => 'sudoplatform-engineering@anonyome.com' }
   spec.homepage              = 'https://sudoplatform.com'
   spec.summary               = 'API client SDK for the Sudo Platform by Anonyome Labs.'

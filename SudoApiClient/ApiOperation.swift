@@ -24,6 +24,10 @@ public enum ApiOperationError: Error {
     /// sufficient entitlements or exceeding some other service limit.
     case insufficientEntitlements
 
+    /// Operation failed due to it exceeding some limits imposed for the API. For example, this error
+    /// can occur if the resource size exceeds the database record size limit.
+    case limitExceeded
+
     /// Operation failed because the user account is locked.
     case accountLocked
 
@@ -65,6 +69,8 @@ public enum ApiOperationError: Error {
         switch errorType {
         case ApiOperation.SudoPlatformServiceError.insufficientEntitlementsError:
             return .insufficientEntitlements
+        case ApiOperation.SudoPlatformServiceError.limitExceededError:
+            return .limitExceeded
         case ApiOperation.SudoPlatformServiceError.conditionalCheckFailedException:
             return .versionMismatch
         case ApiOperation.SudoPlatformServiceError.accountLockedError:
@@ -117,6 +123,7 @@ open class ApiOperation: Operation {
         static let insufficientEntitlementsError = "sudoplatform.InsufficientEntitlementsError"
         static let decodingError = "sudoplatform.DecodingError"
         static let accountLockedError = "sudoplatform.AccountLockedError"
+        static let limitExceededError = "sudoplatform.LimitExceededError"
         static let conditionalCheckFailedException = "DynamoDB:ConditionalCheckFailedException"
         static let serviceError = "sudoplatform.ServiceError"
     }
