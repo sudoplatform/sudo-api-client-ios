@@ -39,6 +39,11 @@ public enum ApiOperationError: Error {
     /// time.
     case rateLimitExceeded
 
+    /// Indicates the version of the object that is getting updated does not match the current version of the
+    /// object in the backend. The caller should retrieve the current version of the object and reconcile the
+    /// difference.
+    case versionMismatch
+
     /// GraphQL endpoint returned an error.
     case graphQLError(cause: GraphQLError)
 
@@ -60,6 +65,8 @@ public enum ApiOperationError: Error {
         switch errorType {
         case ApiOperation.SudoPlatformServiceError.insufficientEntitlementsError:
             return .insufficientEntitlementsError
+        case ApiOperation.SudoPlatformServiceError.conditionalCheckFailedException:
+            return .versionMismatch
         case ApiOperation.SudoPlatformServiceError.accountLockedError:
             return .accountLocked
         case ApiOperation.SudoPlatformServiceError.decodingError:
@@ -110,6 +117,7 @@ open class ApiOperation: Operation {
         static let insufficientEntitlementsError = "sudoplatform.InsufficientEntitlementsError"
         static let decodingError = "sudoplatform.DecodingError"
         static let accountLockedError = "sudoplatform.AccountLockedError"
+        static let conditionalCheckFailedException = "DynamoDB:ConditionalCheckFailedException"
         static let serviceError = "sudoplatform.ServiceError"
     }
 
