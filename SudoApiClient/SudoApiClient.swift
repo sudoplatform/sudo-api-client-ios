@@ -27,9 +27,11 @@ public class SudoApiClient {
 
     private let logger: Logger
 
-    public var serialQueue = ApiOperationQueue(maxConcurrentOperationCount: 1, maxQueueDepth: 10)
+    /// Serial operation queue used for GraphQL mutations and queries with unsatisfied preconditions.
+    public let serialQueue: ApiOperationQueue
 
-    public var concurrentQueue = ApiOperationQueue(maxConcurrentOperationCount: 3, maxQueueDepth: 10)
+    /// Concurrent operation queue used for GraphQL queries with all precondtions met.
+    public let concurrentQueue: ApiOperationQueue
 
     /// Callback for determing cache key for object in AppSync.
     static var cacheKeyForObject: AWSAppSync.CacheKeyForObject = {
@@ -48,21 +50,21 @@ public class SudoApiClient {
     ///   - configProvider: `AWSAppSyncServiceConfigProvider` to provide the client configuration.
     ///   - sudoUserClient: `SudoUserClient` instance to provide the authentication token.
     ///   - logger: `Logger` instance to use for logging.
-    ///   - maxSerialQueueDepth: Max serial queue depth.
-    ///   - maxConcurrentQueueDepth: Max concurrent queue depth.
+    ///   - serialQueue: Serial queue to use for mutations and queries with unmet preconditions.
+    ///   - concurrentQueue: Concurrent queue to use for queries with preconditions met..
     ///   - appSyncClient: `AWSAppSyncClient` instance to use for unit testing.
     public init(
         configProvider: AWSAppSyncServiceConfigProvider,
         sudoUserClient: SudoUserClient,
         logger: Logger = Logger.sudoApiClientLogger,
-        maxSerialQueueDepth: Int = 10,
-        maxConcurrentQueueDepth: Int = 10,
+        serialQueue: ApiOperationQueue = SudoApiClientManager.serialOperationQueue,
+        concurrentQueue: ApiOperationQueue = SudoApiClientManager.concurrentOperationQueue,
         appSyncClient: AWSAppSyncClient? = nil
     ) throws {
         self.sudoUserClient = sudoUserClient
         self.logger = logger
-        self.serialQueue = ApiOperationQueue(maxConcurrentOperationCount: 1, maxQueueDepth: maxSerialQueueDepth)
-        self.concurrentQueue = ApiOperationQueue(maxConcurrentOperationCount: 3, maxQueueDepth: maxConcurrentQueueDepth)
+        self.serialQueue = serialQueue
+        self.concurrentQueue = concurrentQueue
         if let appSyncClient = appSyncClient {
             self.appSyncClient = appSyncClient
         } else {

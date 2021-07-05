@@ -15,7 +15,15 @@ public class SudoApiClientManager {
 
     // MARK: - Supplementary
 
+    /// Singleton instance of `SudoApiClientManager`.
     public static let instance = SudoApiClientManager()
+
+    /// Serial operation queue shared (defaut) by `SudoApiClient` instances for GraphQL mutations and queries with unsatisfied
+    /// preconditions.
+    public static let serialOperationQueue = ApiOperationQueue(maxConcurrentOperationCount: 1, maxQueueDepth: 10)
+
+    /// Concurrent operation queue shaed (default) by `SudoApiClient` instances for GraphQL queries with all preconditions met.
+    public static let concurrentOperationQueue = ApiOperationQueue(maxConcurrentOperationCount: 3, maxQueueDepth: 10)
 
     private struct Config {
 

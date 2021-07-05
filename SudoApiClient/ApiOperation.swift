@@ -20,6 +20,10 @@ public enum ApiOperationError: Error {
     /// invalid or other security controls prevent the user from accessing the API.
     case notAuthorized
 
+    /// Operation failed due to it requiring tokens to be refreshed but something else is already in
+    /// middle of refreshing the tokens.
+    case refreshTokensOperationAlreadyInProgress
+
     /// Operation failed due to the backend entitlements error. This maybe due to the user not having
     /// sufficient entitlements or exceeding some other service limit.
     case insufficientEntitlements
@@ -92,6 +96,8 @@ public enum ApiOperationError: Error {
                 return .notSignedIn
             case GraphQLAuthProviderError.notAuthorized:
                 return .notAuthorized
+            case GraphQLAuthProviderError.refreshTokensOperationAlreadyInProgress:
+                return .refreshTokensOperationAlreadyInProgress
             default:
                 return .fatalError(description: "Unexpected authentication error: \(cause)")
             }
