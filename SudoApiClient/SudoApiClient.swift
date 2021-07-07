@@ -186,4 +186,11 @@ public class SudoApiClient {
         try self.appSyncClient.clearCaches(options: options)
     }
 
+    /// Returns the underlying `AWSAppSyncClient` instance.
+    ///
+    /// - Returns:`AWSAppSyncClient` instance.
+    public func getAppSyncClient() -> AWSAppSyncClient {
+        return self.appSyncClient
+    }
+
 }
