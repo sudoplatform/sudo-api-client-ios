@@ -21,7 +21,7 @@ public class SudoApiClient {
 
     }
 
-    unowned private let sudoUserClient: SudoUserClient
+    unowned private let sudoUserClient: SudoUserClient?
 
     private let appSyncClient: AWSAppSyncClient
 
@@ -84,6 +84,26 @@ public class SudoApiClient {
         }
     }
 
+    /// Initializes a `SudoApiClient` instance.
+    ///
+    /// - Parameters:
+    ///   - appSyncClient: `AWSAppSyncClient` instance to use..
+    ///   - logger: `Logger` instance to use for logging.
+    ///   - serialQueue: Serial queue to use for mutations and queries with unmet preconditions.
+    ///   - concurrentQueue: Concurrent queue to use for queries with preconditions met..
+    public init(
+        appSyncClient: AWSAppSyncClient,
+        logger: Logger = Logger.sudoApiClientLogger,
+        serialQueue: ApiOperationQueue = SudoApiClientManager.serialOperationQueue,
+        concurrentQueue: ApiOperationQueue = SudoApiClientManager.concurrentOperationQueue
+    ) throws {
+        self.appSyncClient = appSyncClient
+        self.sudoUserClient = nil
+        self.logger = logger
+        self.serialQueue = serialQueue
+        self.concurrentQueue = concurrentQueue
+    }
+
     /// Performs a mutation by sending it to the server. Internally, these mutations are added to a queue and performed
     /// serially, in first-in, first-out order. Clients can inspect the size of the queue with the `queuedMutationCount`
     /// property.
@@ -103,8 +123,10 @@ public class SudoApiClient {
         conflictResolutionBlock: MutationConflictHandler<Mutation>? = nil,
         resultHandler: OperationResultHandler<Mutation>? = nil
     ) throws {
-        guard try self.sudoUserClient.isSignedIn() else {
-            throw ApiOperationError.notSignedIn
+        if let sudoUserClient = self.sudoUserClient {
+            guard try sudoUserClient.isSignedIn() else {
+                throw ApiOperationError.notSignedIn
+            }
         }
 
         let op = MutationOperation(
@@ -135,8 +157,10 @@ public class SudoApiClient {
         queue: DispatchQueue = DispatchQueue.main,
         resultHandler: OperationResultHandler<Query>? = nil
     ) throws {
-        guard try self.sudoUserClient.isSignedIn() else {
-            throw ApiOperationError.notSignedIn
+        if let sudoUserClient = self.sudoUserClient {
+            guard try sudoUserClient.isSignedIn() else {
+                throw ApiOperationError.notSignedIn
+            }
         }
 
         let op = QueryOperation(
@@ -147,13 +171,17 @@ public class SudoApiClient {
             resultHandler: resultHandler
         )
 
-        // If the ID token is at least good for 2 mins then allow concurrent execution of
-        // queries since no auto refreshing of tokens will occur 1 min before the expiry.
-        if let expiry = try self.sudoUserClient.getTokenExpiry(),
-           expiry > Date(timeIntervalSinceNow: 120) {
-            try self.concurrentQueue.addOperation(op)
+        if let sudoUserClient = self.sudoUserClient {
+            // If the ID token is at least good for 2 mins then allow concurrent execution of
+            // queries since no auto refreshing of tokens will occur 1 min before the expiry.
+            if let expiry = try sudoUserClient.getTokenExpiry(),
+               expiry > Date(timeIntervalSinceNow: 120) {
+                try self.concurrentQueue.addOperation(op)
+            } else {
+                try self.serialQueue.addOperation(op)
+            }
         } else {
-            try self.serialQueue.addOperation(op)
+            try self.concurrentQueue.addOperation(op)
         }
     }
 
@@ -172,8 +200,10 @@ public class SudoApiClient {
         statusChangeHandler: SubscriptionStatusChangeHandler? = nil,
         resultHandler: @escaping SubscriptionResultHandler<Subscription>
     ) throws -> AWSAppSyncSubscriptionWatcher<Subscription>? {
-        guard try self.sudoUserClient.isSignedIn() else {
-            throw ApiOperationError.notSignedIn
+        if let sudoUserClient = self.sudoUserClient {
+            guard try sudoUserClient.isSignedIn() else {
+                throw ApiOperationError.notSignedIn
+            }
         }
 
         return try self.appSyncClient.subscribe(subscription: subscription, queue: queue, statusChangeHandler: statusChangeHandler, resultHandler: resultHandler)
