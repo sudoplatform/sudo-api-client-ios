@@ -80,10 +80,12 @@ public class SudoApiClientManager {
         }
     }
 
-    /// Clears any cached data including queries, subscriptions and pending mutations data.
+    /// Clears any cached data including queries, subscriptions, pending mutations data and cause the singleton instance to be
+    /// re-created on next access.
     public func reset() throws {
         try self.queue.sync {
             try self.client?.clearCaches()
+            self.client = nil
         }
     }
 
