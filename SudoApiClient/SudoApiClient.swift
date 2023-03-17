@@ -162,6 +162,13 @@ public class SudoApiClient {
         cachePolicy: CachePolicy = .returnCacheDataElseFetch,
         queue: DispatchQueue = DispatchQueue.main
     ) async throws -> (result: GraphQLResult<Query.Data>?, error: Error?) {
+        guard cachePolicy != .returnCacheDataAndFetch else {
+            // We cannot support this cache policy because it causes AppSyncClient
+            // to invoke the same callback multiple times. In the structured
+            // concurrency model, we can only return the result once.
+            throw ApiOperationError.invalidArgument
+        }
+        
         var opQueue = self.serialQueue
 
         if let sudoUserClient = self.sudoUserClient {

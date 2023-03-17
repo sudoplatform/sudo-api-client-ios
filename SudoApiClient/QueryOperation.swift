@@ -60,12 +60,7 @@ class QueryOperation<Query: GraphQLQuery>: ApiOperation {
                         self.done()
                     } else {
                         self.resultHandler?(result, nil)
-                        // Don't mark the operation as done if cache policy is `returnCacheDataAndFetch`
-                        // since it causes the result handler to be called twice: once for cached data
-                        // and second time for remote data.
-                        if !(result.source == .cache && self.cachePolicy == .returnCacheDataAndFetch) {
-                            self.done()
-                        }
+                        self.done()
                     }
                 } else {
                     self.resultHandler?(nil, nil)
