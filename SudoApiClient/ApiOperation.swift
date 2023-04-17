@@ -56,6 +56,10 @@ public enum ApiOperationError: Error {
     /// difference.
     case versionMismatch
 
+    /// Indicates the API operation did not complete within the expected amount of time and has been
+    /// cancelled.
+    case timedOut
+
     /// GraphQL endpoint returned an error.
     case graphQLError(cause: GraphQLError)
 

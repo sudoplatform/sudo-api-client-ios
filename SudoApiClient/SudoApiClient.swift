@@ -119,7 +119,8 @@ public class SudoApiClient {
         mutation: Mutation,
         queue: DispatchQueue = .main,
         optimisticUpdate: OptimisticResponseBlock? = nil,
-        conflictResolutionBlock: MutationConflictHandler<Mutation>? = nil
+        conflictResolutionBlock: MutationConflictHandler<Mutation>? = nil,
+        operationTimeout: Int? = nil
     ) async throws -> (result: GraphQLResult<Mutation.Data>?, error: Error?) {
         if let sudoUserClient = self.sudoUserClient {
             guard try await sudoUserClient.isSignedIn() else {
