@@ -91,7 +91,7 @@ class MutationOperation<Mutation: GraphQLMutation>: ApiOperation {
                 guard let self = self else {
                     return
                 }
-                
+
                 self.graphQLOperation?.cancel()
                 self.resultHandler?(nil, ApiOperationError.timedOut)
                 self.done()
