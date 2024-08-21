@@ -9,14 +9,14 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target "SudoApiClient" do
   podspec :name => 'SudoApiClient'
-end
 
-target "SudoApiClientTests" do
-  podspec :name => 'SudoApiClient'
-end
+  target "SudoApiClientTests" do
+    podspec :name => 'SudoApiClient'
+  end
 
-target "SudoApiClientIntegrationTests" do
-  podspec :name => 'SudoApiClient'
+  target "SudoApiClientIntegrationTests" do
+    podspec :name => 'SudoApiClient'
+  end
 end
 
 post_install do |installer|

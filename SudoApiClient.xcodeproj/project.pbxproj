@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74494CA82C10114C21B66010 /* Pods_SudoApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A0CB91D6514D754D7636D8 /* Pods_SudoApiClient.framework */; };
-		A2F453FB4EF45D269F389267 /* Pods_SudoApiClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4F5B9CE4CAF31258E442C6 /* Pods_SudoApiClientTests.framework */; };
-		A635B91765A9E0F4C2CD51FA /* Pods_SudoApiClientIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E16BB257C281E902A236D43 /* Pods_SudoApiClientIntegrationTests.framework */; };
+		561EFB948B787D61ED2F549F /* Pods_SudoApiClient_SudoApiClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F46544C592FE7C00BA4482 /* Pods_SudoApiClient_SudoApiClientTests.framework */; };
 		AD5769432AC159E80092452E /* SudoApiClientManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5769422AC159E80092452E /* SudoApiClientManagerTests.swift */; };
 		D931C7B92342D22700932612 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931C7B82342D22700932612 /* AppDelegate.swift */; };
 		D931C7BB2342D22700932612 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931C7BA2342D22700932612 /* ViewController.swift */; };
@@ -33,6 +31,8 @@
 		D9FD3DC723D6A3E800781D80 /* SudoApiClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD3DC623D6A3E800781D80 /* SudoApiClientManager.swift */; };
 		D9FD3DC923D6A4E400781D80 /* SudoApiClientConfigProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD3DC823D6A4E400781D80 /* SudoApiClientConfigProvider.swift */; };
 		D9FD3DCB23D6A56200781D80 /* AWSEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD3DCA23D6A56200781D80 /* AWSEndpoint.swift */; };
+		F34CDA64349E1E14CE4FC032 /* Pods_SudoApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DC15548F30EC3AA8AA42AD /* Pods_SudoApiClient.framework */; };
+		FE9550E06F4317598B450343 /* Pods_SudoApiClient_SudoApiClientIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BAA7A939A703C7CD30B34B /* Pods_SudoApiClient_SudoApiClientIntegrationTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,15 +67,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01F9CEBFD3D8FEE2FA270677 /* Pods-SudoApiClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClientTests.release.xcconfig"; path = "Target Support Files/Pods-SudoApiClientTests/Pods-SudoApiClientTests.release.xcconfig"; sourceTree = "<group>"; };
-		23FCBCA9101A42CDE0FFEAAB /* Pods-SudoApiClientIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClientIntegrationTests.debug.xcconfig"; path = "Target Support Files/Pods-SudoApiClientIntegrationTests/Pods-SudoApiClientIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2E16BB257C281E902A236D43 /* Pods_SudoApiClientIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoApiClientIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D2C5B288A17443189F1938E /* Pods-SudoApiClientIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClientIntegrationTests.release.xcconfig"; path = "Target Support Files/Pods-SudoApiClientIntegrationTests/Pods-SudoApiClientIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
-		6C4F5B9CE4CAF31258E442C6 /* Pods_SudoApiClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoApiClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93E1F259CB4999C9C66C3408 /* Pods-SudoApiClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient.debug.xcconfig"; path = "Target Support Files/Pods-SudoApiClient/Pods-SudoApiClient.debug.xcconfig"; sourceTree = "<group>"; };
-		98A0CB91D6514D754D7636D8 /* Pods_SudoApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0191E80964A8B76E21AF0F83 /* Pods-SudoApiClient-SudoApiClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient-SudoApiClientTests.debug.xcconfig"; path = "Target Support Files/Pods-SudoApiClient-SudoApiClientTests/Pods-SudoApiClient-SudoApiClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		06DC15548F30EC3AA8AA42AD /* Pods_SudoApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F46544C592FE7C00BA4482 /* Pods_SudoApiClient_SudoApiClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoApiClient_SudoApiClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57BAA7A939A703C7CD30B34B /* Pods_SudoApiClient_SudoApiClientIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoApiClient_SudoApiClientIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4AE9380F209ECAE41DDFB5 /* Pods-SudoApiClient-SudoApiClientIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient-SudoApiClientIntegrationTests.release.xcconfig"; path = "Target Support Files/Pods-SudoApiClient-SudoApiClientIntegrationTests/Pods-SudoApiClient-SudoApiClientIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD5769422AC159E80092452E /* SudoApiClientManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudoApiClientManagerTests.swift; sourceTree = "<group>"; };
-		B632DFAF8B0E2B0680EEBC55 /* Pods-SudoApiClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClientTests.debug.xcconfig"; path = "Target Support Files/Pods-SudoApiClientTests/Pods-SudoApiClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFD00FAF212BCDDCAD2F9E04 /* Pods-SudoApiClient-SudoApiClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient-SudoApiClientTests.release.xcconfig"; path = "Target Support Files/Pods-SudoApiClient-SudoApiClientTests/Pods-SudoApiClient-SudoApiClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		BE99CF3C213D14A553509102 /* Pods-SudoApiClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient.debug.xcconfig"; path = "Target Support Files/Pods-SudoApiClient/Pods-SudoApiClient.debug.xcconfig"; sourceTree = "<group>"; };
+		C8B5047358F7F91B744AA9F5 /* Pods-SudoApiClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient.release.xcconfig"; path = "Target Support Files/Pods-SudoApiClient/Pods-SudoApiClient.release.xcconfig"; sourceTree = "<group>"; };
 		D931C7B62342D22700932612 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931C7B82342D22700932612 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D931C7BA2342D22700932612 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		D9FD3DC623D6A3E800781D80 /* SudoApiClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClientManager.swift; sourceTree = "<group>"; };
 		D9FD3DC823D6A4E400781D80 /* SudoApiClientConfigProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClientConfigProvider.swift; sourceTree = "<group>"; };
 		D9FD3DCA23D6A56200781D80 /* AWSEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSEndpoint.swift; sourceTree = "<group>"; };
-		FF1DF2AE6B7C76BBCF86D187 /* Pods-SudoApiClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient.release.xcconfig"; path = "Target Support Files/Pods-SudoApiClient/Pods-SudoApiClient.release.xcconfig"; sourceTree = "<group>"; };
+		F6D0B0A6C2859733D094310A /* Pods-SudoApiClient-SudoApiClientIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient-SudoApiClientIntegrationTests.debug.xcconfig"; path = "Target Support Files/Pods-SudoApiClient-SudoApiClientIntegrationTests/Pods-SudoApiClient-SudoApiClientIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74494CA82C10114C21B66010 /* Pods_SudoApiClient.framework in Frameworks */,
+				F34CDA64349E1E14CE4FC032 /* Pods_SudoApiClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9971C6222FD299A0077076C /* SudoApiClient.framework in Frameworks */,
-				A2F453FB4EF45D269F389267 /* Pods_SudoApiClientTests.framework in Frameworks */,
+				561EFB948B787D61ED2F549F /* Pods_SudoApiClient_SudoApiClientTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9F16E7022FD498E0055513F /* SudoApiClient.framework in Frameworks */,
-				A635B91765A9E0F4C2CD51FA /* Pods_SudoApiClientIntegrationTests.framework in Frameworks */,
+				FE9550E06F4317598B450343 /* Pods_SudoApiClient_SudoApiClientIntegrationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,24 +158,14 @@
 		C1CFCFDA6A8EDCBA54AF85D7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93E1F259CB4999C9C66C3408 /* Pods-SudoApiClient.debug.xcconfig */,
-				FF1DF2AE6B7C76BBCF86D187 /* Pods-SudoApiClient.release.xcconfig */,
-				23FCBCA9101A42CDE0FFEAAB /* Pods-SudoApiClientIntegrationTests.debug.xcconfig */,
-				5D2C5B288A17443189F1938E /* Pods-SudoApiClientIntegrationTests.release.xcconfig */,
-				B632DFAF8B0E2B0680EEBC55 /* Pods-SudoApiClientTests.debug.xcconfig */,
-				01F9CEBFD3D8FEE2FA270677 /* Pods-SudoApiClientTests.release.xcconfig */,
+				BE99CF3C213D14A553509102 /* Pods-SudoApiClient.debug.xcconfig */,
+				C8B5047358F7F91B744AA9F5 /* Pods-SudoApiClient.release.xcconfig */,
+				F6D0B0A6C2859733D094310A /* Pods-SudoApiClient-SudoApiClientIntegrationTests.debug.xcconfig */,
+				7E4AE9380F209ECAE41DDFB5 /* Pods-SudoApiClient-SudoApiClientIntegrationTests.release.xcconfig */,
+				0191E80964A8B76E21AF0F83 /* Pods-SudoApiClient-SudoApiClientTests.debug.xcconfig */,
+				AFD00FAF212BCDDCAD2F9E04 /* Pods-SudoApiClient-SudoApiClientTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		C24C22AE82CC7CE8BAB838BA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				98A0CB91D6514D754D7636D8 /* Pods_SudoApiClient.framework */,
-				2E16BB257C281E902A236D43 /* Pods_SudoApiClientIntegrationTests.framework */,
-				6C4F5B9CE4CAF31258E442C6 /* Pods_SudoApiClientTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D931C7B72342D22700932612 /* TestApp */ = {
@@ -204,7 +194,7 @@
 				D931C7B72342D22700932612 /* TestApp */,
 				D9971C5922FD299A0077076C /* Products */,
 				C1CFCFDA6A8EDCBA54AF85D7 /* Pods */,
-				C24C22AE82CC7CE8BAB838BA /* Frameworks */,
+				E55AC4C15A611A9941AF309E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -280,6 +270,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E55AC4C15A611A9941AF309E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06DC15548F30EC3AA8AA42AD /* Pods_SudoApiClient.framework */,
+				57BAA7A939A703C7CD30B34B /* Pods_SudoApiClient_SudoApiClientIntegrationTests.framework */,
+				28F46544C592FE7C00BA4482 /* Pods_SudoApiClient_SudoApiClientTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -316,7 +316,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9971C6C22FD299A0077076C /* Build configuration list for PBXNativeTarget "SudoApiClient" */;
 			buildPhases = (
-				8D6C8F95A494258E515824FC /* [CP] Check Pods Manifest.lock */,
+				EEF84081503EEECCD63B4200 /* [CP] Check Pods Manifest.lock */,
 				D9971C5322FD299A0077076C /* Headers */,
 				D9971C5422FD299A0077076C /* Sources */,
 				D9971C5522FD299A0077076C /* Frameworks */,
@@ -336,11 +336,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9971C6F22FD299A0077076C /* Build configuration list for PBXNativeTarget "SudoApiClientTests" */;
 			buildPhases = (
-				EA70016F6FA267B92DD6EEA9 /* [CP] Check Pods Manifest.lock */,
+				443B9DA2BD20C054B1B749E8 /* [CP] Check Pods Manifest.lock */,
 				D9971C5D22FD299A0077076C /* Sources */,
 				D9971C5E22FD299A0077076C /* Frameworks */,
 				D9971C5F22FD299A0077076C /* Resources */,
-				949EA20BFA7910366D78CDFF /* [CP] Embed Pods Frameworks */,
+				0DEFC76CB63866E62EE07F8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -357,12 +357,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9F16E7322FD498E0055513F /* Build configuration list for PBXNativeTarget "SudoApiClientIntegrationTests" */;
 			buildPhases = (
-				9A65DBD3C51F78478E8DC248 /* [CP] Check Pods Manifest.lock */,
+				85A5D63AD554E06A50B778FC /* [CP] Check Pods Manifest.lock */,
 				D9F16E6722FD498E0055513F /* Sources */,
 				D9F16E6822FD498E0055513F /* Frameworks */,
 				D9F16E6922FD498E0055513F /* Resources */,
-				CB6E85E4FB64E432065C8A80 /* [CP] Embed Pods Frameworks */,
 				D931C7B12342D1C200932612 /* Copy Config */,
+				7F7088F6BF9D6ECD5126371B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -459,7 +459,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8D6C8F95A494258E515824FC /* [CP] Check Pods Manifest.lock */ = {
+		0DEFC76CB63866E62EE07F8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SudoApiClient-SudoApiClientTests/Pods-SudoApiClient-SudoApiClientTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SudoApiClient-SudoApiClientTests/Pods-SudoApiClient-SudoApiClientTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SudoApiClient-SudoApiClientTests/Pods-SudoApiClient-SudoApiClientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		443B9DA2BD20C054B1B749E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -474,31 +491,31 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SudoApiClient-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SudoApiClient-SudoApiClientTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		949EA20BFA7910366D78CDFF /* [CP] Embed Pods Frameworks */ = {
+		7F7088F6BF9D6ECD5126371B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SudoApiClientTests/Pods-SudoApiClientTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SudoApiClient-SudoApiClientIntegrationTests/Pods-SudoApiClient-SudoApiClientIntegrationTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SudoApiClientTests/Pods-SudoApiClientTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SudoApiClient-SudoApiClientIntegrationTests/Pods-SudoApiClient-SudoApiClientIntegrationTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SudoApiClientTests/Pods-SudoApiClientTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SudoApiClient-SudoApiClientIntegrationTests/Pods-SudoApiClient-SudoApiClientIntegrationTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A65DBD3C51F78478E8DC248 /* [CP] Check Pods Manifest.lock */ = {
+		85A5D63AD554E06A50B778FC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -513,28 +530,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SudoApiClientIntegrationTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SudoApiClient-SudoApiClientIntegrationTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB6E85E4FB64E432065C8A80 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SudoApiClientIntegrationTests/Pods-SudoApiClientIntegrationTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SudoApiClientIntegrationTests/Pods-SudoApiClientIntegrationTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SudoApiClientIntegrationTests/Pods-SudoApiClientIntegrationTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D931C7B12342D1C200932612 /* Copy Config */ = {
@@ -591,7 +591,7 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint > /dev/null; then\n    swiftlint --path ${PROJECT_DIR}\nelse\n    echo \"Warning: SwiftLint not installed, run 'brew install swiftlint'\"\nfi\n";
 		};
-		EA70016F6FA267B92DD6EEA9 /* [CP] Check Pods Manifest.lock */ = {
+		EEF84081503EEECCD63B4200 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -606,7 +606,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SudoApiClientTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SudoApiClient-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -867,7 +867,7 @@
 		};
 		D9971C6D22FD299A0077076C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93E1F259CB4999C9C66C3408 /* Pods-SudoApiClient.debug.xcconfig */;
+			baseConfigurationReference = BE99CF3C213D14A553509102 /* Pods-SudoApiClient.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -898,7 +898,7 @@
 		};
 		D9971C6E22FD299A0077076C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF1DF2AE6B7C76BBCF86D187 /* Pods-SudoApiClient.release.xcconfig */;
+			baseConfigurationReference = C8B5047358F7F91B744AA9F5 /* Pods-SudoApiClient.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -928,7 +928,7 @@
 		};
 		D9971C7022FD299A0077076C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B632DFAF8B0E2B0680EEBC55 /* Pods-SudoApiClientTests.debug.xcconfig */;
+			baseConfigurationReference = 0191E80964A8B76E21AF0F83 /* Pods-SudoApiClient-SudoApiClientTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -948,7 +948,7 @@
 		};
 		D9971C7122FD299A0077076C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01F9CEBFD3D8FEE2FA270677 /* Pods-SudoApiClientTests.release.xcconfig */;
+			baseConfigurationReference = AFD00FAF212BCDDCAD2F9E04 /* Pods-SudoApiClient-SudoApiClientTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -968,7 +968,7 @@
 		};
 		D9F16E7422FD498E0055513F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23FCBCA9101A42CDE0FFEAAB /* Pods-SudoApiClientIntegrationTests.debug.xcconfig */;
+			baseConfigurationReference = F6D0B0A6C2859733D094310A /* Pods-SudoApiClient-SudoApiClientIntegrationTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -988,7 +988,7 @@
 		};
 		D9F16E7522FD498E0055513F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D2C5B288A17443189F1938E /* Pods-SudoApiClientIntegrationTests.release.xcconfig */;
+			baseConfigurationReference = 7E4AE9380F209ECAE41DDFB5 /* Pods-SudoApiClient-SudoApiClientIntegrationTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
