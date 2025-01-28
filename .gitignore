@@ -19,3 +19,5 @@ identity-system-test-config
 build/
 docs/
 config
+.build
+.jazzy.yml

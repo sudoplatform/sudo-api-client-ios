@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D9971C5722FD299A0077076C"
-               BuildableName = "SudoApiClient.framework"
+               BlueprintIdentifier = "SudoApiClient"
+               BuildableName = "SudoApiClient"
                BlueprintName = "SudoApiClient"
-               ReferencedContainer = "container:SudoApiClient.xcodeproj">
+               ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES"
       onlyGenerateCoverageForSpecifiedTargets = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D9971C5722FD299A0077076C"
-            BuildableName = "SudoApiClient.framework"
-            BlueprintName = "SudoApiClient"
-            ReferencedContainer = "container:SudoApiClient.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -70,15 +61,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D9971C5722FD299A0077076C"
-            BuildableName = "SudoApiClient.framework"
-            BlueprintName = "SudoApiClient"
-            ReferencedContainer = "container:SudoApiClient.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -89,10 +71,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D9971C5722FD299A0077076C"
-            BuildableName = "SudoApiClient.framework"
+            BlueprintIdentifier = "SudoApiClient"
+            BuildableName = "SudoApiClient"
             BlueprintName = "SudoApiClient"
-            ReferencedContainer = "container:SudoApiClient.xcodeproj">
+            ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

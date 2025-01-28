@@ -66,6 +66,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D9F16E6A22FD498E0055513F"
+            BuildableName = "SudoApiClientIntegrationTests.xctest"
+            BlueprintName = "SudoApiClientIntegrationTests"
+            ReferencedContainer = "container:SudoApiClient.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -3,36 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		561EFB948B787D61ED2F549F /* Pods_SudoApiClient_SudoApiClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F46544C592FE7C00BA4482 /* Pods_SudoApiClient_SudoApiClientTests.framework */; };
 		AD5769432AC159E80092452E /* SudoApiClientManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5769422AC159E80092452E /* SudoApiClientManagerTests.swift */; };
 		D931C7B92342D22700932612 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931C7B82342D22700932612 /* AppDelegate.swift */; };
 		D931C7BB2342D22700932612 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931C7BA2342D22700932612 /* ViewController.swift */; };
 		D931C7BE2342D22700932612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D931C7BC2342D22700932612 /* Main.storyboard */; };
 		D931C7C02342D22800932612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D931C7BF2342D22800932612 /* Assets.xcassets */; };
 		D931C7C32342D22800932612 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D931C7C12342D22800932612 /* LaunchScreen.storyboard */; };
-		D931C7CB2342D3D000932612 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931C7CA2342D3D000932612 /* Data.swift */; };
-		D9971C6222FD299A0077076C /* SudoApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9971C5822FD299A0077076C /* SudoApiClient.framework */; };
 		D9971C6722FD299A0077076C /* SudoApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9971C6622FD299A0077076C /* SudoApiClientTests.swift */; };
-		D9971C6922FD299A0077076C /* SudoApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D9971C5B22FD299A0077076C /* SudoApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9971C7E22FD46650077076C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9971C7D22FD46650077076C /* Logger.swift */; };
-		D999CBA8268987DB00E1C24D /* NSLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999CBA7268987DB00E1C24D /* NSLock.swift */; };
-		D9E3AFC926897EF300F4DE05 /* SudoApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3AFC826897EF300F4DE05 /* SudoApiClient.swift */; };
-		D9E3AFCD2689867F00F4DE05 /* ApiOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3AFCB2689867F00F4DE05 /* ApiOperation.swift */; };
-		D9E3AFCE2689867F00F4DE05 /* ApiOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3AFCC2689867F00F4DE05 /* ApiOperationQueue.swift */; };
-		D9E841B8268AA8F900B17EA0 /* QueryOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E841B7268AA8F900B17EA0 /* QueryOperation.swift */; };
-		D9E841BA268AA90A00B17EA0 /* MutationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E841B9268AA90A00B17EA0 /* MutationOperation.swift */; };
 		D9F16E6E22FD498E0055513F /* SudoApiClientIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F16E6D22FD498E0055513F /* SudoApiClientIntegrationTests.swift */; };
-		D9F16E7022FD498E0055513F /* SudoApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9971C5822FD299A0077076C /* SudoApiClient.framework */; };
 		D9FD3DC323D6A2BC00781D80 /* sudoplatformconfig.json in Resources */ = {isa = PBXBuildFile; fileRef = D9FD3DC223D6A2BC00781D80 /* sudoplatformconfig.json */; };
-		D9FD3DC723D6A3E800781D80 /* SudoApiClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD3DC623D6A3E800781D80 /* SudoApiClientManager.swift */; };
-		D9FD3DC923D6A4E400781D80 /* SudoApiClientConfigProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD3DC823D6A4E400781D80 /* SudoApiClientConfigProvider.swift */; };
-		D9FD3DCB23D6A56200781D80 /* AWSEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD3DCA23D6A56200781D80 /* AWSEndpoint.swift */; };
-		F34CDA64349E1E14CE4FC032 /* Pods_SudoApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DC15548F30EC3AA8AA42AD /* Pods_SudoApiClient.framework */; };
-		FE9550E06F4317598B450343 /* Pods_SudoApiClient_SudoApiClientIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BAA7A939A703C7CD30B34B /* Pods_SudoApiClient_SudoApiClientIntegrationTests.framework */; };
+		E2BF3E322D08E3AD00011739 /* SudoApiClient in Frameworks */ = {isa = PBXBuildFile; productRef = E2BF3E312D08E3AD00011739 /* SudoApiClient */; };
+		E2BF3E342D08E3B100011739 /* SudoApiClient in Frameworks */ = {isa = PBXBuildFile; productRef = E2BF3E332D08E3B100011739 /* SudoApiClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,20 +27,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = D931C7B52342D22700932612;
 			remoteInfo = TestApp;
-		};
-		D9971C6322FD299A0077076C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9971C4F22FD299A0077076C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D9971C5722FD299A0077076C;
-			remoteInfo = SudoDirectoryClient;
-		};
-		D9F16E7122FD498E0055513F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9971C4F22FD299A0077076C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D9971C5722FD299A0077076C;
-			remoteInfo = SudoDirectoryClient;
 		};
 		D9FD3DBF23D6A17300781D80 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -67,15 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0191E80964A8B76E21AF0F83 /* Pods-SudoApiClient-SudoApiClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient-SudoApiClientTests.debug.xcconfig"; path = "Target Support Files/Pods-SudoApiClient-SudoApiClientTests/Pods-SudoApiClient-SudoApiClientTests.debug.xcconfig"; sourceTree = "<group>"; };
-		06DC15548F30EC3AA8AA42AD /* Pods_SudoApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28F46544C592FE7C00BA4482 /* Pods_SudoApiClient_SudoApiClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoApiClient_SudoApiClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57BAA7A939A703C7CD30B34B /* Pods_SudoApiClient_SudoApiClientIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoApiClient_SudoApiClientIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E4AE9380F209ECAE41DDFB5 /* Pods-SudoApiClient-SudoApiClientIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient-SudoApiClientIntegrationTests.release.xcconfig"; path = "Target Support Files/Pods-SudoApiClient-SudoApiClientIntegrationTests/Pods-SudoApiClient-SudoApiClientIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD5769422AC159E80092452E /* SudoApiClientManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudoApiClientManagerTests.swift; sourceTree = "<group>"; };
-		AFD00FAF212BCDDCAD2F9E04 /* Pods-SudoApiClient-SudoApiClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient-SudoApiClientTests.release.xcconfig"; path = "Target Support Files/Pods-SudoApiClient-SudoApiClientTests/Pods-SudoApiClient-SudoApiClientTests.release.xcconfig"; sourceTree = "<group>"; };
-		BE99CF3C213D14A553509102 /* Pods-SudoApiClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient.debug.xcconfig"; path = "Target Support Files/Pods-SudoApiClient/Pods-SudoApiClient.debug.xcconfig"; sourceTree = "<group>"; };
-		C8B5047358F7F91B744AA9F5 /* Pods-SudoApiClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient.release.xcconfig"; path = "Target Support Files/Pods-SudoApiClient/Pods-SudoApiClient.release.xcconfig"; sourceTree = "<group>"; };
 		D931C7B62342D22700932612 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931C7B82342D22700932612 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D931C7BA2342D22700932612 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,30 +46,14 @@
 		D931C7BF2342D22800932612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D931C7C22342D22800932612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D931C7C42342D22800932612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D931C7CA2342D3D000932612 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		D9971C5822FD299A0077076C /* SudoApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SudoApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9971C5B22FD299A0077076C /* SudoApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SudoApiClient.h; sourceTree = "<group>"; };
-		D9971C5C22FD299A0077076C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9971C6122FD299A0077076C /* SudoApiClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudoApiClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9971C6622FD299A0077076C /* SudoApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClientTests.swift; sourceTree = "<group>"; };
 		D9971C6822FD299A0077076C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9971C7222FD2A510077076C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D9971C7322FD2A5B0077076C /* SudoApiClient.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SudoApiClient.podspec; sourceTree = "<group>"; };
-		D9971C7D22FD46650077076C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		D999CBA7268987DB00E1C24D /* NSLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLock.swift; sourceTree = "<group>"; };
-		D9E3AFC826897EF300F4DE05 /* SudoApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClient.swift; sourceTree = "<group>"; };
-		D9E3AFCB2689867F00F4DE05 /* ApiOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiOperation.swift; sourceTree = "<group>"; };
-		D9E3AFCC2689867F00F4DE05 /* ApiOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiOperationQueue.swift; sourceTree = "<group>"; };
-		D9E841B7268AA8F900B17EA0 /* QueryOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryOperation.swift; sourceTree = "<group>"; };
-		D9E841B9268AA90A00B17EA0 /* MutationOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutationOperation.swift; sourceTree = "<group>"; };
 		D9F16E6B22FD498E0055513F /* SudoApiClientIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudoApiClientIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F16E6D22FD498E0055513F /* SudoApiClientIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClientIntegrationTests.swift; sourceTree = "<group>"; };
 		D9F16E6F22FD498E0055513F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9FD3DC223D6A2BC00781D80 /* sudoplatformconfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sudoplatformconfig.json; sourceTree = "<group>"; };
-		D9FD3DC623D6A3E800781D80 /* SudoApiClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClientManager.swift; sourceTree = "<group>"; };
-		D9FD3DC823D6A4E400781D80 /* SudoApiClientConfigProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClientConfigProvider.swift; sourceTree = "<group>"; };
-		D9FD3DCA23D6A56200781D80 /* AWSEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSEndpoint.swift; sourceTree = "<group>"; };
-		F6D0B0A6C2859733D094310A /* Pods-SudoApiClient-SudoApiClientIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoApiClient-SudoApiClientIntegrationTests.debug.xcconfig"; path = "Target Support Files/Pods-SudoApiClient-SudoApiClientIntegrationTests/Pods-SudoApiClient-SudoApiClientIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E29AF4982D4817B5005F2580 /* aws-sdk-ios-spm */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "aws-sdk-ios-spm"; path = "/Users/broth/dev/derivedData/SudoApiClient-bgxlspxiwzyyrfeediegrcundndr/SourcePackages/checkouts/aws-sdk-ios-spm"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,20 +64,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9971C5522FD299A0077076C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F34CDA64349E1E14CE4FC032 /* Pods_SudoApiClient.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D9971C5E22FD299A0077076C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9971C6222FD299A0077076C /* SudoApiClient.framework in Frameworks */,
-				561EFB948B787D61ED2F549F /* Pods_SudoApiClient_SudoApiClientTests.framework in Frameworks */,
+				E2BF3E322D08E3AD00011739 /* SudoApiClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9F16E7022FD498E0055513F /* SudoApiClient.framework in Frameworks */,
-				FE9550E06F4317598B450343 /* Pods_SudoApiClient_SudoApiClientIntegrationTests.framework in Frameworks */,
+				E2BF3E342D08E3B100011739 /* SudoApiClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,22 +92,10 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		C1CFCFDA6A8EDCBA54AF85D7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BE99CF3C213D14A553509102 /* Pods-SudoApiClient.debug.xcconfig */,
-				C8B5047358F7F91B744AA9F5 /* Pods-SudoApiClient.release.xcconfig */,
-				F6D0B0A6C2859733D094310A /* Pods-SudoApiClient-SudoApiClientIntegrationTests.debug.xcconfig */,
-				7E4AE9380F209ECAE41DDFB5 /* Pods-SudoApiClient-SudoApiClientIntegrationTests.release.xcconfig */,
-				0191E80964A8B76E21AF0F83 /* Pods-SudoApiClient-SudoApiClientTests.debug.xcconfig */,
-				AFD00FAF212BCDDCAD2F9E04 /* Pods-SudoApiClient-SudoApiClientTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		D931C7B72342D22700932612 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				E29AF4982D4817B5005F2580 /* aws-sdk-ios-spm */,
 				D9FD3DC123D6A27C00781D80 /* Supporting Files */,
 				D931C7B82342D22700932612 /* AppDelegate.swift */,
 				D9FD3DC223D6A2BC00781D80 /* sudoplatformconfig.json */,
@@ -186,42 +111,21 @@
 		D9971C4E22FD299A0077076C = {
 			isa = PBXGroup;
 			children = (
-				D9971C7222FD2A510077076C /* Podfile */,
-				D9971C7322FD2A5B0077076C /* SudoApiClient.podspec */,
-				D9971C5A22FD299A0077076C /* SudoApiClient */,
 				D9971C6522FD299A0077076C /* SudoApiClientTests */,
 				D9F16E6C22FD498E0055513F /* SudoApiClientIntegrationTests */,
 				D931C7B72342D22700932612 /* TestApp */,
 				D9971C5922FD299A0077076C /* Products */,
-				C1CFCFDA6A8EDCBA54AF85D7 /* Pods */,
-				E55AC4C15A611A9941AF309E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D9971C5922FD299A0077076C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9971C5822FD299A0077076C /* SudoApiClient.framework */,
 				D9971C6122FD299A0077076C /* SudoApiClientTests.xctest */,
 				D9F16E6B22FD498E0055513F /* SudoApiClientIntegrationTests.xctest */,
 				D931C7B62342D22700932612 /* TestApp.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D9971C5A22FD299A0077076C /* SudoApiClient */ = {
-			isa = PBXGroup;
-			children = (
-				D9E3AFCA2689863A00F4DE05 /* Operation */,
-				D9971C7A22FD41090077076C /* Extension */,
-				D9971C5B22FD299A0077076C /* SudoApiClient.h */,
-				D9971C5C22FD299A0077076C /* Info.plist */,
-				D9FD3DC623D6A3E800781D80 /* SudoApiClientManager.swift */,
-				D9971C7D22FD46650077076C /* Logger.swift */,
-				D9FD3DC823D6A4E400781D80 /* SudoApiClientConfigProvider.swift */,
-				D9E3AFC826897EF300F4DE05 /* SudoApiClient.swift */,
-			);
-			path = SudoApiClient;
 			sourceTree = "<group>";
 		};
 		D9971C6522FD299A0077076C /* SudoApiClientTests */ = {
@@ -231,27 +135,6 @@
 				D9971C6822FD299A0077076C /* Info.plist */,
 			);
 			path = SudoApiClientTests;
-			sourceTree = "<group>";
-		};
-		D9971C7A22FD41090077076C /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				D931C7CA2342D3D000932612 /* Data.swift */,
-				D9FD3DCA23D6A56200781D80 /* AWSEndpoint.swift */,
-				D999CBA7268987DB00E1C24D /* NSLock.swift */,
-			);
-			name = Extension;
-			sourceTree = "<group>";
-		};
-		D9E3AFCA2689863A00F4DE05 /* Operation */ = {
-			isa = PBXGroup;
-			children = (
-				D9E3AFCB2689867F00F4DE05 /* ApiOperation.swift */,
-				D9E3AFCC2689867F00F4DE05 /* ApiOperationQueue.swift */,
-				D9E841B7268AA8F900B17EA0 /* QueryOperation.swift */,
-				D9E841B9268AA90A00B17EA0 /* MutationOperation.swift */,
-			);
-			name = Operation;
 			sourceTree = "<group>";
 		};
 		D9F16E6C22FD498E0055513F /* SudoApiClientIntegrationTests */ = {
@@ -270,28 +153,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E55AC4C15A611A9941AF309E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				06DC15548F30EC3AA8AA42AD /* Pods_SudoApiClient.framework */,
-				57BAA7A939A703C7CD30B34B /* Pods_SudoApiClient_SudoApiClientIntegrationTests.framework */,
-				28F46544C592FE7C00BA4482 /* Pods_SudoApiClient_SudoApiClientTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		D9971C5322FD299A0077076C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9971C6922FD299A0077076C /* SudoApiClient.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		D931C7B52342D22700932612 /* TestApp */ = {
@@ -312,43 +174,23 @@
 			productReference = D931C7B62342D22700932612 /* TestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D9971C5722FD299A0077076C /* SudoApiClient */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D9971C6C22FD299A0077076C /* Build configuration list for PBXNativeTarget "SudoApiClient" */;
-			buildPhases = (
-				EEF84081503EEECCD63B4200 /* [CP] Check Pods Manifest.lock */,
-				D9971C5322FD299A0077076C /* Headers */,
-				D9971C5422FD299A0077076C /* Sources */,
-				D9971C5522FD299A0077076C /* Frameworks */,
-				D9971C5622FD299A0077076C /* Resources */,
-				D942ADD2268C5B15001CD1B6 /* Lint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SudoApiClient;
-			productName = SudoDirectoryClient;
-			productReference = D9971C5822FD299A0077076C /* SudoApiClient.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		D9971C6022FD299A0077076C /* SudoApiClientTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9971C6F22FD299A0077076C /* Build configuration list for PBXNativeTarget "SudoApiClientTests" */;
 			buildPhases = (
-				443B9DA2BD20C054B1B749E8 /* [CP] Check Pods Manifest.lock */,
 				D9971C5D22FD299A0077076C /* Sources */,
 				D9971C5E22FD299A0077076C /* Frameworks */,
 				D9971C5F22FD299A0077076C /* Resources */,
-				0DEFC76CB63866E62EE07F8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D9971C6422FD299A0077076C /* PBXTargetDependency */,
 				D9FD3DC023D6A17300781D80 /* PBXTargetDependency */,
 			);
 			name = SudoApiClientTests;
+			packageProductDependencies = (
+				E2BF3E312D08E3AD00011739 /* SudoApiClient */,
+			);
 			productName = SudoDirectoryClientTests;
 			productReference = D9971C6122FD299A0077076C /* SudoApiClientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -357,20 +199,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9F16E7322FD498E0055513F /* Build configuration list for PBXNativeTarget "SudoApiClientIntegrationTests" */;
 			buildPhases = (
-				85A5D63AD554E06A50B778FC /* [CP] Check Pods Manifest.lock */,
 				D9F16E6722FD498E0055513F /* Sources */,
 				D9F16E6822FD498E0055513F /* Frameworks */,
 				D9F16E6922FD498E0055513F /* Resources */,
 				D931C7B12342D1C200932612 /* Copy Config */,
-				7F7088F6BF9D6ECD5126371B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D9F16E7222FD498E0055513F /* PBXTargetDependency */,
 				D931C7C92342D22D00932612 /* PBXTargetDependency */,
 			);
 			name = SudoApiClientIntegrationTests;
+			packageProductDependencies = (
+				E2BF3E332D08E3B100011739 /* SudoApiClient */,
+			);
 			productName = SudoDirectoryClientIntegrationTests;
 			productReference = D9F16E6B22FD498E0055513F /* SudoApiClientIntegrationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -387,10 +229,6 @@
 				TargetAttributes = {
 					D931C7B52342D22700932612 = {
 						CreatedOnToolsVersion = 10.3;
-					};
-					D9971C5722FD299A0077076C = {
-						CreatedOnToolsVersion = 10.3;
-						LastSwiftMigration = 1030;
 					};
 					D9971C6022FD299A0077076C = {
 						CreatedOnToolsVersion = 10.3;
@@ -415,7 +253,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9971C5722FD299A0077076C /* SudoApiClient */,
 				D9971C6022FD299A0077076C /* SudoApiClientTests */,
 				D9F16E6A22FD498E0055513F /* SudoApiClientIntegrationTests */,
 				D931C7B52342D22700932612 /* TestApp */,
@@ -432,13 +269,6 @@
 				D9FD3DC323D6A2BC00781D80 /* sudoplatformconfig.json in Resources */,
 				D931C7C02342D22800932612 /* Assets.xcassets in Resources */,
 				D931C7BE2342D22700932612 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9971C5622FD299A0077076C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,84 +289,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0DEFC76CB63866E62EE07F8B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SudoApiClient-SudoApiClientTests/Pods-SudoApiClient-SudoApiClientTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SudoApiClient-SudoApiClientTests/Pods-SudoApiClient-SudoApiClientTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SudoApiClient-SudoApiClientTests/Pods-SudoApiClient-SudoApiClientTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		443B9DA2BD20C054B1B749E8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SudoApiClient-SudoApiClientTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F7088F6BF9D6ECD5126371B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SudoApiClient-SudoApiClientIntegrationTests/Pods-SudoApiClient-SudoApiClientIntegrationTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SudoApiClient-SudoApiClientIntegrationTests/Pods-SudoApiClient-SudoApiClientIntegrationTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SudoApiClient-SudoApiClientIntegrationTests/Pods-SudoApiClient-SudoApiClientIntegrationTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85A5D63AD554E06A50B778FC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SudoApiClient-SudoApiClientIntegrationTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D931C7B12342D1C200932612 /* Copy Config */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -573,46 +325,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Type a script or drag a script file from your workspace to insert its path.\ncp -f config/sudoplatformconfig.json \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || true\n";
 		};
-		D942ADD2268C5B15001CD1B6 /* Lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = Lint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint > /dev/null; then\n    swiftlint --path ${PROJECT_DIR}\nelse\n    echo \"Warning: SwiftLint not installed, run 'brew install swiftlint'\"\nfi\n";
-		};
-		EEF84081503EEECCD63B4200 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SudoApiClient-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -622,24 +334,6 @@
 			files = (
 				D931C7BB2342D22700932612 /* ViewController.swift in Sources */,
 				D931C7B92342D22700932612 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9971C5422FD299A0077076C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9E3AFC926897EF300F4DE05 /* SudoApiClient.swift in Sources */,
-				D931C7CB2342D3D000932612 /* Data.swift in Sources */,
-				D9E841B8268AA8F900B17EA0 /* QueryOperation.swift in Sources */,
-				D9E3AFCE2689867F00F4DE05 /* ApiOperationQueue.swift in Sources */,
-				D9E3AFCD2689867F00F4DE05 /* ApiOperation.swift in Sources */,
-				D9E841BA268AA90A00B17EA0 /* MutationOperation.swift in Sources */,
-				D9971C7E22FD46650077076C /* Logger.swift in Sources */,
-				D9FD3DCB23D6A56200781D80 /* AWSEndpoint.swift in Sources */,
-				D9FD3DC923D6A4E400781D80 /* SudoApiClientConfigProvider.swift in Sources */,
-				D9FD3DC723D6A3E800781D80 /* SudoApiClientManager.swift in Sources */,
-				D999CBA8268987DB00E1C24D /* NSLock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,16 +361,6 @@
 			isa = PBXTargetDependency;
 			target = D931C7B52342D22700932612 /* TestApp */;
 			targetProxy = D931C7C82342D22D00932612 /* PBXContainerItemProxy */;
-		};
-		D9971C6422FD299A0077076C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D9971C5722FD299A0077076C /* SudoApiClient */;
-			targetProxy = D9971C6322FD299A0077076C /* PBXContainerItemProxy */;
-		};
-		D9F16E7222FD498E0055513F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D9971C5722FD299A0077076C /* SudoApiClient */;
-			targetProxy = D9F16E7122FD498E0055513F /* PBXContainerItemProxy */;
 		};
 		D9FD3DC023D6A17300781D80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -865,70 +549,8 @@
 			};
 			name = Release;
 		};
-		D9971C6D22FD299A0077076C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE99CF3C213D14A553509102 /* Pods-SudoApiClient.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = UU2W43R8JA;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = SudoApiClient/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sudoplatform.sudoapiclient;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D9971C6E22FD299A0077076C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8B5047358F7F91B744AA9F5 /* Pods-SudoApiClient.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = UU2W43R8JA;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = SudoApiClient/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sudoplatform.sudoapiclient;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		D9971C7022FD299A0077076C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0191E80964A8B76E21AF0F83 /* Pods-SudoApiClient-SudoApiClientTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -948,7 +570,6 @@
 		};
 		D9971C7122FD299A0077076C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFD00FAF212BCDDCAD2F9E04 /* Pods-SudoApiClient-SudoApiClientTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -968,7 +589,6 @@
 		};
 		D9F16E7422FD498E0055513F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6D0B0A6C2859733D094310A /* Pods-SudoApiClient-SudoApiClientIntegrationTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -988,7 +608,6 @@
 		};
 		D9F16E7522FD498E0055513F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E4AE9380F209ECAE41DDFB5 /* Pods-SudoApiClient-SudoApiClientIntegrationTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1027,15 +646,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9971C6C22FD299A0077076C /* Build configuration list for PBXNativeTarget "SudoApiClient" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9971C6D22FD299A0077076C /* Debug */,
-				D9971C6E22FD299A0077076C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D9971C6F22FD299A0077076C /* Build configuration list for PBXNativeTarget "SudoApiClientTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1055,6 +665,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E2BF3E312D08E3AD00011739 /* SudoApiClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SudoApiClient;
+		};
+		E2BF3E332D08E3B100011739 /* SudoApiClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SudoApiClient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D9971C4F22FD299A0077076C /* Project object */;
 }
