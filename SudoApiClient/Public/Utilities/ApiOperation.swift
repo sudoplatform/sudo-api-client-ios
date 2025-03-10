@@ -6,123 +6,7 @@
 
 import Foundation
 import SudoLogging
-import AWSAppSync
 import SudoUser
-
-public enum ApiOperationError: Error {
-    /// One of preconditions of the operation was not met.
-    case preconditionFailure
-
-    /// Operation failed due to the user not being signed in.
-    case notSignedIn
-
-    /// Operation failed due to authorization error. This maybe due to the authentication token being
-    /// invalid or other security controls prevent the user from accessing the API.
-    case notAuthorized
-
-    /// Operation failed due to it requiring tokens to be refreshed but something else is already in
-    /// middle of refreshing the tokens.
-    case refreshTokensOperationAlreadyInProgress
-
-    /// Operation failed due to the backend entitlements error. This maybe due to the user not having
-    /// sufficient entitlements or exceeding some other service limit.
-    case insufficientEntitlements
-
-    /// Operation failed due to it exceeding some limits imposed for the API. For example, this error
-    /// can occur if the resource size exceeds the database record size limit.
-    case limitExceeded
-
-    /// Operation failed because the user account is locked.
-    case accountLocked
-
-    /// Indicates that an operation rejects the request because a provided argument
-    /// did not have a valid value
-    case invalidArgument
-
-    /// Operation failed due to an invalid request. This maybe due to the version mismatch between the
-    /// client and the backend.
-    case invalidRequest
-
-    /// Indicates that an internal server error caused the operation to fail. The error is possibly transient
-    /// and retrying at a later time may cause the operation to complete successfully
-    case serviceError
-
-    /// Indicates that there were too many attempts at sending API requests within a short period of
-    /// time.
-    case rateLimitExceeded
-
-    /// Indicates the version of the object that is getting updated does not match the current version of the
-    /// object in the backend. The caller should retrieve the current version of the object and reconcile the
-    /// difference.
-    case versionMismatch
-
-    /// Indicates the API operation did not complete within the expected amount of time and has been
-    /// cancelled.
-    case timedOut
-
-    /// GraphQL endpoint returned an error.
-    case graphQLError(cause: GraphQLError)
-
-    /// GraphQL request failed due to connectivity, availability or access error.
-    case requestFailed(response: HTTPURLResponse?, cause: Error?)
-
-    /// AppSyncClient client returned an unexpected error.
-    case appSyncClientError(cause: Error)
-
-    /// Indicates that a fatal error occurred. This could be due to coding error, out-of-memory  condition
-    /// or other conditions that is beyond control this library.
-    case fatalError(description: String)
-
-    static func fromGraphQLError(error: GraphQLError) -> ApiOperationError {
-        guard let errorType = error[ApiOperation.SudoPlatformServiceError.type] as? String else {
-          return .fatalError(description: "GraphQL operation failed but error type was not found in the response. \(error)")
-        }
-
-        switch errorType {
-        case ApiOperation.SudoPlatformServiceError.insufficientEntitlementsError:
-            return .insufficientEntitlements
-        case ApiOperation.SudoPlatformServiceError.invalidArgumentError:
-            return .invalidArgument
-        case ApiOperation.SudoPlatformServiceError.limitExceededError:
-            return .limitExceeded
-        case ApiOperation.SudoPlatformServiceError.conditionalCheckFailedException:
-            return .versionMismatch
-        case ApiOperation.SudoPlatformServiceError.accountLockedError:
-            return .accountLocked
-        case ApiOperation.SudoPlatformServiceError.decodingError:
-            return .invalidRequest
-        case ApiOperation.SudoPlatformServiceError.serviceError:
-            return .serviceError
-        default:
-            return .graphQLError(cause: error)
-        }
-    }
-
-    static func fromAppSyncClientError(error: Error) -> ApiOperationError {
-        switch error {
-        case AWSAppSyncClientError.authenticationError(let cause):
-            switch cause {
-            case GraphQLAuthProviderError.notSignedIn:
-                return .notSignedIn
-            case GraphQLAuthProviderError.notAuthorized:
-                return .notAuthorized
-            case GraphQLAuthProviderError.refreshTokensOperationAlreadyInProgress:
-                return .refreshTokensOperationAlreadyInProgress
-            default:
-                return .fatalError(description: "Unexpected authentication error: \(cause)")
-            }
-        case AWSAppSyncClientError.requestFailed(_, let response, let cause):
-            if let statusCode = response?.statusCode {
-                if statusCode == 401 {
-                    return .notAuthorized
-                }
-            }
-            return .requestFailed(response: response, cause: cause)
-        default:
-            return .appSyncClientError(cause: error)
-        }
-    }
-}
 
 public enum ApiOperationState: Int {
     case ready = 0
@@ -134,17 +18,6 @@ public enum ApiOperationState: Int {
 /// that all subclasses are expected to provide.
 open class ApiOperation: Operation {
 
-    struct SudoPlatformServiceError {
-        static let type = "errorType"
-        static let accountLockedError = "sudoplatform.AccountLockedError"
-        static let conditionalCheckFailedException = "DynamoDB:ConditionalCheckFailedException"
-        static let decodingError = "sudoplatform.DecodingError"
-        static let insufficientEntitlementsError = "sudoplatform.InsufficientEntitlementsError"
-        static let invalidArgumentError = "sudoplatform.InvalidArgumentError"
-        static let limitExceededError = "sudoplatform.LimitExceededError"
-        static let serviceError = "sudoplatform.ServiceError"
-    }
-
     private struct Constants {
         static let IsExecuting = "isExecuting"
         static let IsFinished = "isFinished"
@@ -155,7 +28,7 @@ open class ApiOperation: Operation {
 
     let logger: Logger
 
-    var graphQLOperation: Cancellable?
+    var graphQLOperation: Task<Void, Never>?
 
     private let stateLock = NSLock()
 

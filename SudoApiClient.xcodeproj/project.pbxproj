@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		417DE40A2D65AC3B004D8B25 /* GraphQLClientSubscriptionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DE4092D65AC3B004D8B25 /* GraphQLClientSubscriptionMock.swift */; };
+		417DE40D2D65B73B004D8B25 /* ApiOperationQueueSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DE40C2D65B73B004D8B25 /* ApiOperationQueueSpy.swift */; };
+		417DE4462D65C045004D8B25 /* GraphQLSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DE4422D65BFD0004D8B25 /* GraphQLSubscription.swift */; };
+		417DE44D2D6694AB004D8B25 /* ApiOperationQueueSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DE44C2D6694AB004D8B25 /* ApiOperationQueueSpy.swift */; };
+		417DE44F2D669769004D8B25 /* ApiOperationErrorTransformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DE44E2D669769004D8B25 /* ApiOperationErrorTransformerTests.swift */; };
+		417DE4512D66980A004D8B25 /* GraphQLSubscriptionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DE4502D66980A004D8B25 /* GraphQLSubscriptionMock.swift */; };
+		417DE4532D66A48F004D8B25 /* SudoConfigManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DE4522D66A48F004D8B25 /* SudoConfigManagerMock.swift */; };
+		41BD21DA2D75926E00943E9C /* RegisterFederatedIdMutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD21D92D75926E00943E9C /* RegisterFederatedIdMutation.swift */; };
+		41BD21DC2D75927A00943E9C /* NotImplementedQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD21DB2D75927A00943E9C /* NotImplementedQuery.swift */; };
+		41BD21DD2D75968300943E9C /* RegisterFederatedIdMutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD21D92D75926E00943E9C /* RegisterFederatedIdMutation.swift */; };
+		41BD21DE2D75968500943E9C /* NotImplementedQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD21DB2D75927A00943E9C /* NotImplementedQuery.swift */; };
+		41D167172D65A9C70043155F /* GraphQLClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D167162D65A9C70043155F /* GraphQLClientMock.swift */; };
 		AD5769432AC159E80092452E /* SudoApiClientManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5769422AC159E80092452E /* SudoApiClientManagerTests.swift */; };
 		D931C7B92342D22700932612 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931C7B82342D22700932612 /* AppDelegate.swift */; };
 		D931C7BB2342D22700932612 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931C7BA2342D22700932612 /* ViewController.swift */; };
@@ -38,6 +50,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		415E3A702D6C499C00D89F4D /* DefaultSudoApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSudoApiClient.swift; sourceTree = "<group>"; };
+		417DE4092D65AC3B004D8B25 /* GraphQLClientSubscriptionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLClientSubscriptionMock.swift; sourceTree = "<group>"; };
+		417DE40C2D65B73B004D8B25 /* ApiOperationQueueSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiOperationQueueSpy.swift; sourceTree = "<group>"; };
+		417DE4262D65BB08004D8B25 /* GraphQLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLClient.swift; sourceTree = "<group>"; };
+		417DE4292D65BB08004D8B25 /* ApiOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiOperation.swift; sourceTree = "<group>"; };
+		417DE42A2D65BB08004D8B25 /* ApiOperationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiOperationError.swift; sourceTree = "<group>"; };
+		417DE42B2D65BB08004D8B25 /* ApiOperationErrorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiOperationErrorTransformer.swift; sourceTree = "<group>"; };
+		417DE42C2D65BB08004D8B25 /* ApiOperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiOperationQueue.swift; sourceTree = "<group>"; };
+		417DE42D2D65BB08004D8B25 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		417DE42E2D65BB08004D8B25 /* DefaultGraphQLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGraphQLClient.swift; sourceTree = "<group>"; };
+		417DE42F2D65BB08004D8B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		417DE4302D65BB08004D8B25 /* Logger+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extensions.swift"; sourceTree = "<group>"; };
+		417DE4312D65BB08004D8B25 /* MutationOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutationOperation.swift; sourceTree = "<group>"; };
+		417DE4322D65BB08004D8B25 /* NSLock+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLock+Extensions.swift"; sourceTree = "<group>"; };
+		417DE4332D65BB08004D8B25 /* QueryOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryOperation.swift; sourceTree = "<group>"; };
+		417DE4342D65BB08004D8B25 /* SudoApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SudoApiClient.h; sourceTree = "<group>"; };
+		417DE4352D65BB08004D8B25 /* SudoApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClient.swift; sourceTree = "<group>"; };
+		417DE4362D65BB08004D8B25 /* SudoApiClientConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClientConfig.swift; sourceTree = "<group>"; };
+		417DE4372D65BB08004D8B25 /* SudoApiClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClientManager.swift; sourceTree = "<group>"; };
+		417DE4422D65BFD0004D8B25 /* GraphQLSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLSubscription.swift; sourceTree = "<group>"; };
+		417DE4442D65C01B004D8B25 /* GraphQLClientConnectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLClientConnectionState.swift; sourceTree = "<group>"; };
+		417DE44C2D6694AB004D8B25 /* ApiOperationQueueSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiOperationQueueSpy.swift; sourceTree = "<group>"; };
+		417DE44E2D669769004D8B25 /* ApiOperationErrorTransformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiOperationErrorTransformerTests.swift; sourceTree = "<group>"; };
+		417DE4502D66980A004D8B25 /* GraphQLSubscriptionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLSubscriptionMock.swift; sourceTree = "<group>"; };
+		417DE4522D66A48F004D8B25 /* SudoConfigManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoConfigManagerMock.swift; sourceTree = "<group>"; };
+		418E57122D6EA634006A57FE /* DefaultAmplifyOIDCAuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAmplifyOIDCAuthProvider.swift; sourceTree = "<group>"; };
+		418E57132D6EA68C006A57FE /* DefaultAPIAuthProviderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPIAuthProviderFactory.swift; sourceTree = "<group>"; };
+		41BD21D52D758F8B00943E9C /* APISwiftGraphQLOperation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APISwiftGraphQLOperation+Extensions.swift"; sourceTree = "<group>"; };
+		41BD21D92D75926E00943E9C /* RegisterFederatedIdMutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFederatedIdMutation.swift; sourceTree = "<group>"; };
+		41BD21DB2D75927A00943E9C /* NotImplementedQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotImplementedQuery.swift; sourceTree = "<group>"; };
+		41C4FAC22D757C3300FB60EB /* GraphQL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphQL+Extensions.swift"; sourceTree = "<group>"; };
+		41D167162D65A9C70043155F /* GraphQLClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLClientMock.swift; sourceTree = "<group>"; };
 		AD5769422AC159E80092452E /* SudoApiClientManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudoApiClientManagerTests.swift; sourceTree = "<group>"; };
 		D931C7B62342D22700932612 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931C7B82342D22700932612 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +97,6 @@
 		D9F16E6D22FD498E0055513F /* SudoApiClientIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudoApiClientIntegrationTests.swift; sourceTree = "<group>"; };
 		D9F16E6F22FD498E0055513F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9FD3DC223D6A2BC00781D80 /* sudoplatformconfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sudoplatformconfig.json; sourceTree = "<group>"; };
-		E29AF4982D4817B5005F2580 /* aws-sdk-ios-spm */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "aws-sdk-ios-spm"; path = "/Users/broth/dev/derivedData/SudoApiClient-bgxlspxiwzyyrfeediegrcundndr/SourcePackages/checkouts/aws-sdk-ios-spm"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +126,158 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		415E3A6F2D6C498600D89F4D /* Concretes */ = {
+			isa = PBXGroup;
+			children = (
+				415E3A702D6C499C00D89F4D /* DefaultSudoApiClient.swift */,
+			);
+			path = Concretes;
+			sourceTree = "<group>";
+		};
+		417DE40B2D65B730004D8B25 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				417DE40C2D65B73B004D8B25 /* ApiOperationQueueSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		417DE4252D65BB08004D8B25 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				417DE43D2D65BB53004D8B25 /* Extensions */,
+				417DE43F2D65BB92004D8B25 /* Operations */,
+				417DE43C2D65BB3A004D8B25 /* Utilities */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		417DE4282D65BB08004D8B25 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				415E3A6F2D6C498600D89F4D /* Concretes */,
+				417DE4392D65BB17004D8B25 /* Entities */,
+				417DE4472D65C0B2004D8B25 /* Protocols */,
+				417DE43E2D65BB78004D8B25 /* Extensions */,
+				417DE43B2D65BB2A004D8B25 /* Utilities */,
+				417DE4372D65BB08004D8B25 /* SudoApiClientManager.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		417DE4382D65BB08004D8B25 /* SudoApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				417DE4252D65BB08004D8B25 /* Internal */,
+				417DE4282D65BB08004D8B25 /* Public */,
+				417DE42F2D65BB08004D8B25 /* Info.plist */,
+				417DE4342D65BB08004D8B25 /* SudoApiClient.h */,
+			);
+			path = SudoApiClient;
+			sourceTree = "<group>";
+		};
+		417DE4392D65BB17004D8B25 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				417DE42A2D65BB08004D8B25 /* ApiOperationError.swift */,
+				417DE4442D65C01B004D8B25 /* GraphQLClientConnectionState.swift */,
+				417DE4362D65BB08004D8B25 /* SudoApiClientConfig.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		417DE43B2D65BB2A004D8B25 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				417DE4292D65BB08004D8B25 /* ApiOperation.swift */,
+				417DE42C2D65BB08004D8B25 /* ApiOperationQueue.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		417DE43C2D65BB3A004D8B25 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				417DE42B2D65BB08004D8B25 /* ApiOperationErrorTransformer.swift */,
+				417DE42E2D65BB08004D8B25 /* DefaultGraphQLClient.swift */,
+				418E57122D6EA634006A57FE /* DefaultAmplifyOIDCAuthProvider.swift */,
+				418E57132D6EA68C006A57FE /* DefaultAPIAuthProviderFactory.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		417DE43D2D65BB53004D8B25 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				417DE42D2D65BB08004D8B25 /* Data+Extensions.swift */,
+				417DE4322D65BB08004D8B25 /* NSLock+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		417DE43E2D65BB78004D8B25 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				417DE4302D65BB08004D8B25 /* Logger+Extensions.swift */,
+				41C4FAC22D757C3300FB60EB /* GraphQL+Extensions.swift */,
+				41BD21D52D758F8B00943E9C /* APISwiftGraphQLOperation+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		417DE43F2D65BB92004D8B25 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				417DE4312D65BB08004D8B25 /* MutationOperation.swift */,
+				417DE4332D65BB08004D8B25 /* QueryOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		417DE4472D65C0B2004D8B25 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				417DE4262D65BB08004D8B25 /* GraphQLClient.swift */,
+				417DE4422D65BFD0004D8B25 /* GraphQLSubscription.swift */,
+				417DE4352D65BB08004D8B25 /* SudoApiClient.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		417DE44B2D66949B004D8B25 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				417DE44C2D6694AB004D8B25 /* ApiOperationQueueSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		41BD21D82D75925800943E9C /* Supplementary */ = {
+			isa = PBXGroup;
+			children = (
+				41BD21D92D75926E00943E9C /* RegisterFederatedIdMutation.swift */,
+				41BD21DB2D75927A00943E9C /* NotImplementedQuery.swift */,
+			);
+			path = Supplementary;
+			sourceTree = "<group>";
+		};
+		41D167152D65A9BB0043155F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				41D167162D65A9C70043155F /* GraphQLClientMock.swift */,
+				417DE4092D65AC3B004D8B25 /* GraphQLClientSubscriptionMock.swift */,
+				417DE4502D66980A004D8B25 /* GraphQLSubscriptionMock.swift */,
+				417DE4522D66A48F004D8B25 /* SudoConfigManagerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		84CD312B24077E7F007FEC0B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				AD5769422AC159E80092452E /* SudoApiClientManagerTests.swift */,
 				D9971C6622FD299A0077076C /* SudoApiClientTests.swift */,
+				417DE44E2D669769004D8B25 /* ApiOperationErrorTransformerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -95,7 +285,6 @@
 		D931C7B72342D22700932612 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
-				E29AF4982D4817B5005F2580 /* aws-sdk-ios-spm */,
 				D9FD3DC123D6A27C00781D80 /* Supporting Files */,
 				D931C7B82342D22700932612 /* AppDelegate.swift */,
 				D9FD3DC223D6A2BC00781D80 /* sudoplatformconfig.json */,
@@ -111,6 +300,7 @@
 		D9971C4E22FD299A0077076C = {
 			isa = PBXGroup;
 			children = (
+				417DE4382D65BB08004D8B25 /* SudoApiClient */,
 				D9971C6522FD299A0077076C /* SudoApiClientTests */,
 				D9F16E6C22FD498E0055513F /* SudoApiClientIntegrationTests */,
 				D931C7B72342D22700932612 /* TestApp */,
@@ -131,6 +321,9 @@
 		D9971C6522FD299A0077076C /* SudoApiClientTests */ = {
 			isa = PBXGroup;
 			children = (
+				41BD21D82D75925800943E9C /* Supplementary */,
+				417DE44B2D66949B004D8B25 /* Spies */,
+				41D167152D65A9BB0043155F /* Mocks */,
 				84CD312B24077E7F007FEC0B /* Tests */,
 				D9971C6822FD299A0077076C /* Info.plist */,
 			);
@@ -140,6 +333,7 @@
 		D9F16E6C22FD498E0055513F /* SudoApiClientIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				417DE40B2D65B730004D8B25 /* Spies */,
 				D9F16E6D22FD498E0055513F /* SudoApiClientIntegrationTests.swift */,
 				D9F16E6F22FD498E0055513F /* Info.plist */,
 			);
@@ -305,7 +499,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -f config/register_key.id \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || true\ncp -f config/register_key.private \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || true\ncp -f config/sudoplatformconfig.json \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || true\n\n";
+			shellScript = "cp -f config/register_key.id \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || :\ncp -f config/register_key.private \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || :\ncp -f config/sudoplatformconfig.json \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || :\n";
 		};
 		D942ADD1268C15F7001CD1B6 /* Copy Config */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -323,7 +517,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Type a script or drag a script file from your workspace to insert its path.\ncp -f config/sudoplatformconfig.json \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || true\n";
+			shellScript = "cp -f config/sudoplatformconfig.json \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || :\ncp -f config/register_key.id \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || :\ncp -f config/register_key.private \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\" || :\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -341,8 +535,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417DE4512D66980A004D8B25 /* GraphQLSubscriptionMock.swift in Sources */,
 				AD5769432AC159E80092452E /* SudoApiClientManagerTests.swift in Sources */,
+				41BD21DA2D75926E00943E9C /* RegisterFederatedIdMutation.swift in Sources */,
+				41BD21DC2D75927A00943E9C /* NotImplementedQuery.swift in Sources */,
 				D9971C6722FD299A0077076C /* SudoApiClientTests.swift in Sources */,
+				417DE44D2D6694AB004D8B25 /* ApiOperationQueueSpy.swift in Sources */,
+				417DE4532D66A48F004D8B25 /* SudoConfigManagerMock.swift in Sources */,
+				417DE44F2D669769004D8B25 /* ApiOperationErrorTransformerTests.swift in Sources */,
+				417DE40A2D65AC3B004D8B25 /* GraphQLClientSubscriptionMock.swift in Sources */,
+				41D167172D65A9C70043155F /* GraphQLClientMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +552,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417DE4462D65C045004D8B25 /* GraphQLSubscription.swift in Sources */,
+				41BD21DD2D75968300943E9C /* RegisterFederatedIdMutation.swift in Sources */,
 				D9F16E6E22FD498E0055513F /* SudoApiClientIntegrationTests.swift in Sources */,
+				41BD21DE2D75968500943E9C /* NotImplementedQuery.swift in Sources */,
+				417DE40D2D65B73B004D8B25 /* ApiOperationQueueSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +796,6 @@
 		D9F16E7422FD498E0055513F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UU2W43R8JA;
 				INFOPLIST_FILE = SudoApiClientIntegrationTests/Info.plist;
@@ -602,14 +807,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudoplatform.SudoDirectoryClientIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestApp";
 			};
 			name = Debug;
 		};
 		D9F16E7522FD498E0055513F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UU2W43R8JA;
 				INFOPLIST_FILE = SudoApiClientIntegrationTests/Info.plist;
@@ -621,7 +825,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudoplatform.SudoDirectoryClientIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestApp";
 			};
 			name = Release;
 		};

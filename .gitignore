@@ -21,3 +21,4 @@ docs/
 config
 .build
 .jazzy.yml
+/Package.resolved
