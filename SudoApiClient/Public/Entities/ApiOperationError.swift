@@ -59,6 +59,10 @@ public enum ApiOperationError: Error {
     /// cancelled.
     case timedOut
 
+    /// Some API operations may only be conditionally available depending on configuration within a particiular
+    /// environment. If an API operation is not available then an operationNotImplemented error will be thrown
+    case operationNotImplemented
+
     /// GraphQL endpoint returned an error.
     case graphQLError(cause: Error)
 
