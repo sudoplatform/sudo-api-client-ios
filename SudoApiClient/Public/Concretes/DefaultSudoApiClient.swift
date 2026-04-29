@@ -9,14 +9,14 @@ import SudoUser
 import SudoLogging
 
 /// Wrapper class for AppSyncClient to provide rate control and common error handling.
-public class DefaultSudoApiClient: SudoApiClient {
+public class DefaultSudoApiClient: SudoApiClient, @unchecked Sendable {
 
     // MARK: - Properties
 
     /// Serial operation queue used for GraphQL mutations and queries with unsatisfied preconditions.
     public let serialQueue: ApiOperationQueue
 
-    /// Concurrent operation queue used for GraphQL queries with all pre-condiions met.
+    /// Concurrent operation queue used for GraphQL queries with all pre-conditions met.
     public let concurrentQueue: ApiOperationQueue
 
     // MARK: - Properties: Internal
@@ -94,9 +94,9 @@ public class DefaultSudoApiClient: SudoApiClient {
     public func subscribe<Subscription: GraphQLSubscription>(
         subscription: Subscription,
         queue: DispatchQueue = DispatchQueue.main,
-        statusChangeHandler: ((GraphQLClientConnectionState) -> Void)? = nil,
-        completionHandler: ((Result<Void, Error>) -> Void)? = nil,
-        resultHandler: @escaping (Result<Subscription.Data, Error>) -> Void
+        statusChangeHandler: (@Sendable (GraphQLClientConnectionState) -> Void)? = nil,
+        completionHandler: (@Sendable (Result<Void, Error>) -> Void)? = nil,
+        resultHandler: @Sendable @escaping (Result<Subscription.Data, Error>) -> Void
     ) -> GraphQLClientSubscription {
         return graphQLClient.subscribe(
             subscription,

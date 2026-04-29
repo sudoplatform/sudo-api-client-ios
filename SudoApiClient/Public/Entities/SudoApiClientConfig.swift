@@ -7,7 +7,7 @@
 import Foundation
 
 /// Contains the configuration properties required to instantiate a `SudoApiClient` instance.
-public struct SudoApiClientConfig: Equatable {
+public struct SudoApiClientConfig: Equatable, Sendable {
 
     // MARK: - Supplementary
 

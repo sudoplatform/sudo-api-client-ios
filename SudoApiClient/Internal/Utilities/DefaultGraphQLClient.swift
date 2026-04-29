@@ -11,7 +11,7 @@ import Foundation
 
 /// A default implementation of `GraphQLClient` that interacts with AWS GraphQL backend.
 /// This class handles authentication, request construction, and execution of GraphQL queries and mutations.
-class DefaultGraphQLClient: GraphQLClient {
+class DefaultGraphQLClient: GraphQLClient, @unchecked Sendable {
 
     // MARK: - Properties
 
@@ -66,9 +66,9 @@ class DefaultGraphQLClient: GraphQLClient {
 
     func subscribe<S: GraphQLSubscription>(
         _ subscription: S,
-        valueListener: ((Result<S.Data, Error>) -> Void)?,
-        connectionListener: ((GraphQLClientConnectionState) -> Void)?,
-        completionListener: ((Result<Void, Error>) -> Void)?
+        valueListener: (@Sendable (Result<S.Data, Error>) -> Void)?,
+        connectionListener: (@Sendable (GraphQLClientConnectionState) -> Void)?,
+        completionListener: (@Sendable (Result<Void, Error>) -> Void)?
     ) -> GraphQLClientSubscription {
         let request = subscription.transformToGraphQLRequest(apiName: apiName)
         return apiPlugin.subscribe(

@@ -36,9 +36,9 @@ public protocol SudoApiClient: AnyObject {
     func subscribe<Subscription: GraphQLSubscription>(
         subscription: Subscription,
         queue: DispatchQueue,
-        statusChangeHandler: ((GraphQLClientConnectionState) -> Void)?,
-        completionHandler: ((Result<Void, Error>) -> Void)?,
-        resultHandler: @escaping (Result<Subscription.Data, Error>) -> Void
+        statusChangeHandler: (@Sendable (GraphQLClientConnectionState) -> Void)?,
+        completionHandler: (@Sendable (Result<Void, Error>) -> Void)?,
+        resultHandler: @Sendable @escaping (Result<Subscription.Data, Error>) -> Void
     ) -> GraphQLClientSubscription
 
     /// Returns the underlying `GraphQLClient` instance.
@@ -58,9 +58,9 @@ public extension SudoApiClient {
     func subscribe<Subscription: GraphQLSubscription>(
         subscription: Subscription,
         queue: DispatchQueue = DispatchQueue.main,
-        statusChangeHandler: ((GraphQLClientConnectionState) -> Void)? = nil,
-        completionHandler: ((Result<Void, Error>) -> Void)? = nil,
-        resultHandler: @escaping (Result<Subscription.Data, Error>) -> Void
+        statusChangeHandler: (@Sendable (GraphQLClientConnectionState) -> Void)? = nil,
+        completionHandler: (@Sendable (Result<Void, Error>) -> Void)? = nil,
+        resultHandler: @Sendable @escaping (Result<Subscription.Data, Error>) -> Void
     ) -> GraphQLClientSubscription {
         subscribe(
             subscription: subscription,

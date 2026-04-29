@@ -11,7 +11,7 @@ import SudoConfigManager
 
 /// Manages a pool of GraphQL client instances, indexed by configuration namespace and unique by (apiUrl, region),
 /// shared by multiple platform service clients.
-public class SudoApiClientManager {
+public class SudoApiClientManager: @unchecked Sendable {
 
     // MARK: - Supplementary
 

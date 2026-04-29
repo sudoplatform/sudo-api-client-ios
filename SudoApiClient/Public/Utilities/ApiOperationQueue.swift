@@ -37,7 +37,7 @@ public protocol ApiOperationQueue {
 
 }
 
-public class DefaultApiOperationQueue: ApiOperationQueue {
+public class DefaultApiOperationQueue: ApiOperationQueue, @unchecked Sendable {
 
     public let maxQueueDepth: Int
 

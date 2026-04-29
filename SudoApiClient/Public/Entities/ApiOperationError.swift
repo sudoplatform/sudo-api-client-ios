@@ -7,7 +7,7 @@
 import Foundation
 
 /// The different errors thrown by the `SudoApiClient` and `SudoApiClientManager`.
-public enum ApiOperationError: Error {
+public enum ApiOperationError: Error, Sendable {
 
     /// One of preconditions of the operation was not met.
     case preconditionFailure

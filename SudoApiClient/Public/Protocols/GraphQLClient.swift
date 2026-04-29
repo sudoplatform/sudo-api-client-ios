@@ -35,9 +35,9 @@ public protocol GraphQLClient {
     /// - Returns: A `GraphQLClientSubscription` instance, which can be used to cancel the subscription.
     func subscribe<S: GraphQLSubscription>(
         _ subscription: S,
-        valueListener: ((Result<S.Data, Error>) -> Void)?,
-        connectionListener: ((GraphQLClientConnectionState) -> Void)?,
-        completionListener: ((Result<Void, Error>) -> Void)?
+        valueListener: (@Sendable (Result<S.Data, Error>) -> Void)?,
+        connectionListener: (@Sendable (GraphQLClientConnectionState) -> Void)?,
+        completionListener: (@Sendable (Result<Void, Error>) -> Void)?
     ) -> GraphQLClientSubscription
 }
 

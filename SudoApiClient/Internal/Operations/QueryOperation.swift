@@ -9,11 +9,11 @@ import SudoLogging
 import SudoUser
 
 /// Operation to perform a GraphQL query.
-class QueryOperation<Query: GraphQLQuery>: ApiOperation {
+class QueryOperation<Query: GraphQLQuery>: ApiOperation, @unchecked Sendable {
 
     // MARK: - Types
 
-    typealias ResultHandler = (Result<Query.Data, ApiOperationError>) -> Void
+    typealias ResultHandler = @Sendable (Result<Query.Data, ApiOperationError>) -> Void
 
     // MARK: - Properties
 

@@ -7,7 +7,7 @@
 import Foundation
 
 /// Represents the connection state of a GraphQL subscription.
-public enum GraphQLClientConnectionState: Equatable {
+public enum GraphQLClientConnectionState: Equatable, Sendable {
 
     /// The subscription is in the process of connecting.
     case connecting

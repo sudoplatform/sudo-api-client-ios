@@ -9,11 +9,11 @@ import SudoLogging
 import SudoUser
 
 /// Operation to perform a GraphQL mutation.
-class MutationOperation<Mutation: GraphQLMutation>: ApiOperation {
+class MutationOperation<Mutation: GraphQLMutation>: ApiOperation, @unchecked Sendable {
 
     // MARK: - Types
 
-    typealias ResultHandler = (Result<Mutation.Data, ApiOperationError>) -> Void
+    typealias ResultHandler = @Sendable (Result<Mutation.Data, ApiOperationError>) -> Void
 
     // MARK: - Properties
 

@@ -250,11 +250,11 @@ public protocol JSONEncodable: GraphQLInputValue {
   var jsonValue: Any { get }
 }
 
-public enum JSONDecodingError: Error, LocalizedError {
+public enum JSONDecodingError: Error, LocalizedError, Sendable {
   case missingValue
   case nullValue
   case wrongType
-  case couldNotConvert(value: Any, to: Any.Type)
+  case couldNotConvert(value: String, to: String)
 
   public var errorDescription: String? {
     switch self {
@@ -273,7 +273,7 @@ public enum JSONDecodingError: Error, LocalizedError {
 extension String: JSONDecodable, JSONEncodable {
   public init(jsonValue value: Any) throws {
     guard let string = value as? String else {
-      throw JSONDecodingError.couldNotConvert(value: value, to: String.self)
+      throw JSONDecodingError.couldNotConvert(value: "\(value)", to: "\(String.self)")
     }
     self = string
   }
@@ -286,7 +286,7 @@ extension String: JSONDecodable, JSONEncodable {
 extension Int: JSONDecodable, JSONEncodable {
   public init(jsonValue value: Any) throws {
     guard let number = value as? NSNumber else {
-      throw JSONDecodingError.couldNotConvert(value: value, to: Int.self)
+      throw JSONDecodingError.couldNotConvert(value: "\(value)", to: "\(Int.self)")
     }
     self = number.intValue
   }
@@ -299,7 +299,7 @@ extension Int: JSONDecodable, JSONEncodable {
 extension Float: JSONDecodable, JSONEncodable {
   public init(jsonValue value: Any) throws {
     guard let number = value as? NSNumber else {
-      throw JSONDecodingError.couldNotConvert(value: value, to: Float.self)
+      throw JSONDecodingError.couldNotConvert(value: "\(value)", to: "\(Float.self)")
     }
     self = number.floatValue
   }
@@ -312,7 +312,7 @@ extension Float: JSONDecodable, JSONEncodable {
 extension Double: JSONDecodable, JSONEncodable {
   public init(jsonValue value: Any) throws {
     guard let number = value as? NSNumber else {
-      throw JSONDecodingError.couldNotConvert(value: value, to: Double.self)
+      throw JSONDecodingError.couldNotConvert(value: "\(value)", to: "\(Double.self)")
     }
     self = number.doubleValue
   }
@@ -325,7 +325,7 @@ extension Double: JSONDecodable, JSONEncodable {
 extension Bool: JSONDecodable, JSONEncodable {
   public init(jsonValue value: Any) throws {
     guard let bool = value as? Bool else {
-        throw JSONDecodingError.couldNotConvert(value: value, to: Bool.self)
+        throw JSONDecodingError.couldNotConvert(value: "\(value)", to: "\(Bool.self)")
     }
     self = bool
   }
@@ -341,7 +341,7 @@ extension RawRepresentable where RawValue: JSONDecodable {
     if let tempSelf = Self(rawValue: rawValue) {
       self = tempSelf
     } else {
-      throw JSONDecodingError.couldNotConvert(value: value, to: Self.self)
+      throw JSONDecodingError.couldNotConvert(value: "\(value)", to: "\(Self.self)")
     }
   }
 }
@@ -408,7 +408,7 @@ extension Array: JSONEncodable {
 extension URL: JSONDecodable, JSONEncodable {
   public init(jsonValue value: Any) throws {
     guard let string = value as? String else {
-      throw JSONDecodingError.couldNotConvert(value: value, to: URL.self)
+      throw JSONDecodingError.couldNotConvert(value: "\(value)", to: "\(URL.self)")
     }
     self.init(string: string)!
   }

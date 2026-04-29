@@ -8,7 +8,7 @@ import Foundation
 import SudoLogging
 import SudoUser
 
-public enum ApiOperationState: Int {
+public enum ApiOperationState: Int, Sendable {
     case ready = 0
     case executing
     case finished
@@ -16,7 +16,7 @@ public enum ApiOperationState: Int {
 
 /// Custom base operation for Sudo Platform API  operations. Provides common functionality
 /// that all subclasses are expected to provide.
-open class ApiOperation: Operation {
+open class ApiOperation: Operation, @unchecked Sendable {
 
     private struct Constants {
         static let IsExecuting = "isExecuting"
